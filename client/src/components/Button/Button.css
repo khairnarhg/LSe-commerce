@@ -14,3 +14,7 @@
   .custom-button:hover {
     background-color: #f0f0f0;
   }
+
+  .custom-button navBar{
+    background-color: red;
+  }

@@ -1,35 +1,44 @@
 .navigation-bar {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
-
-  .upperHalf{
+  
+  .upperHalf {
     background-color: rgba(0, 0, 0, 0.45); /* Black background with 45% transparency */
     height: 35px;
     color: white; /* White text color for visibility */
     padding: 10px; /* Padding for content */
     display: flex;
-    justify-content: center; /* Center content horizontally */
+    justify-content: space-between; /* Space-between for outer elements */
     align-items: center;
+    position: relative; /* For absolute positioning of logo-text-group */
+    width: 100%; /* Full width to align items correctly */
   }
-
+  
   .logo-text-group {
     display: flex;
     flex-direction: row;
     align-items: center; /* Center items vertically within the group */
+    position: absolute; /* Absolute positioning to center it */
+    left: 50%;
+    transform: translateX(-50%);
   }
-
-  .logo{
+  
+  .logo {
     width: 40px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
     margin-right: 10px; /* Space between logo and text */
-    //border-radius: 50%; /* Optional: make the logo circular */
-    //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
-    //transition: transform 0.3s;
+    align : center;
   }
-
+  
   .site-title {
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 35px; /* Adjust the font size as needed */
+    font-weight: bold;
+    font-family: 'Gowun Batang', serif;
+    letter-spacing: 1.5px;
+   
   }
   
   .lowerHalf {
@@ -38,26 +47,63 @@
     height: 20px;
     padding: 10px; /* Padding for content */
     border-top: 2px solid #959595; /* Upper border for division */
-  }
-
-  .icons-group{
-    float: right;
-    display: flex;
-    flex-direction: row;
-    /* justify: content;
-    align-items: center; */
+    border-bottom: 2px solid #959595;
+    justify-content: center;
+    align-items: center;
     
   }
-
-  .icons-button{
-    width: 5px;
-    height: auto;
-    
-  }
-
-  .icon{
-    width: 5px;
-    height: auto;
-  }
-
   
+  .icons-group {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 3%;
+  }
+  
+  .icons-button {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .icon {
+    width: 25px; /* Adjust dimensions as per your icons */
+    height: auto;
+    opacity: 0.8; /* Adjust opacity or styling as needed */
+    transition: opacity 0.3s ease; /* Example transition effect */
+  }
+  
+  .icon:hover {
+    opacity: 1; /* Example hover effect */
+  }
+
+
+  .navbar-button-group{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    gap: 40px;
+    align-items: center;
+   
+  }
+
+  .navbar-button{
+    text-decoration: underline 2.5px solid transparent;
+    transition: text-decoration 0.5s ease;
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'Gowun Batang', serif;
+    letter-spacing: 1.5px;
+    transform: translateY(-15%)
+    
+  }
+
+  .navbar-button:hover {
+    text-decoration: underline solid Currentcolor;
+  }
+
+

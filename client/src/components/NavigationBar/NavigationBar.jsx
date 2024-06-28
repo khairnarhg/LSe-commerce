@@ -10,33 +10,52 @@ import cart from '../../assets/icons/cart.png';
 
 const NavigationBar = () => {
   return (
-    <nav>
-        <div className='upperHalf'>
-            <div className="logo-text-group">
-                <img src={logo} alt="Logo" className="logo" />
-                <span className="site-title">Leather and Style</span>
+  
+        
+        <nav>
+            <div className='upperHalf'>
+                <div className="logo-text-group">
+                    <img src={logo} alt="Logo" className="logo" />
+                    <span className="site-title">Leather and Style</span>
+                </div>
+                <div className="icons-group">
+                    <button className='icons-button'>
+                        <img src={profile} alt="profile" className='icon' />
+                    </button >
+                    <button className='icons-button'>
+                        <img src={search} alt="search" className='icon'/>
+                    </button >
+                    <button className='icons-button'>
+                        <img src={heart} alt="heart" className='icon'/>
+                    </button>
+                    <button className='icons-button'>
+                        <img src={cart} alt="cart" className='icon'/>
+                    </button>
+                </div>
             </div>
-            <div className="icons-group">
-                <button className='icons-button'>
-                    <img src={profile} alt="profile" className='icon' />
-                </button >
-                <button className='icons-button'>
-                    <img src={search} alt="search" className='icon'/>
-                </button >
-                <button className='icons-button'>
-                    <img src={heart} alt="heart" className='icon'/>
-                </button>
-                <button className='icons-button'>
-                    <img src={cart} alt="cart" className='icon'/>
-                </button>
+            <div className='lowerHalf'>
+                <div className='navbar-button-group'>
+                    <button className='navbar-button'>
+                        About Us
+                    </button>
+                    <button className='navbar-button'>
+                        Shop
+                    </button>
+                    <button className='navbar-button'>
+                        Collections
+                    </button>
+                    <button className='navbar-button'>
+                        Corporate Gifts
+                    </button>
+                    <button className='navbar-button'>
+                        Contacts
+                    </button>
+                </div>
+                
+            </div>
+        </nav>
 
-            </div>
-        </div>
-        <div className='lowerHalf'>
-            
-        </div>
-    </nav>
-  )
+  );
 }
 
 export default NavigationBar
