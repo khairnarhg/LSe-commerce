@@ -1,0 +1,63 @@
+.navigation-bar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .upperHalf{
+    background-color: rgba(0, 0, 0, 0.45); /* Black background with 45% transparency */
+    height: 35px;
+    color: white; /* White text color for visibility */
+    padding: 10px; /* Padding for content */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+  }
+
+  .logo-text-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center items vertically within the group */
+  }
+
+  .logo{
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and text */
+    //border-radius: 50%; /* Optional: make the logo circular */
+    //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+    //transition: transform 0.3s;
+  }
+
+  .site-title {
+    font-size: 24px; /* Adjust the font size as needed */
+  }
+  
+  .lowerHalf {
+    background-color: rgba(0, 0, 0, 0.45); /* Black background with 45% transparency */
+    color: white; /* White text color for visibility */
+    height: 20px;
+    padding: 10px; /* Padding for content */
+    border-top: 2px solid #959595; /* Upper border for division */
+  }
+
+  .icons-group{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    /* justify: content;
+    align-items: center; */
+    
+  }
+
+  .icons-button{
+    width: 5px;
+    height: auto;
+    
+  }
+
+  .icon{
+    width: 5px;
+    height: auto;
+  }
+
+  
