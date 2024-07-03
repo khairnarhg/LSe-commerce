@@ -1,12 +1,13 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
-import Button from '../Button/Button';
+//import {Link} from 'react-router-dom';
+//import Button from '../Button/Button';
 import './NavigationBar.css';
 import logo from '../../assets/logos/newlogonobgw.png';
 import profile from '../../assets/icons/profile.png';
 import search from '../../assets/icons/search.png';
 import heart from '../../assets/icons/heart.png';
 import cart from '../../assets/icons/cart.png';
+
 
 const NavigationBar = () => {
   return (
