@@ -3,10 +3,16 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index:10;
+    right:0;
+
   }
   
   .upperHalf {
-    background-color: rgba(0, 0, 0, 0.45); /* Black background with 45% transparency */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 45% transparency */
     height: 35px;
     color: white; /* White text color for visibility */
     padding: 10px; /* Padding for content */
@@ -14,7 +20,9 @@
     justify-content: space-between; /* Space-between for outer elements */
     align-items: center;
     position: relative; /* For absolute positioning of logo-text-group */
-    width: 100%; /* Full width to align items correctly */
+   /* Full width to align items correctly */
+    z-index:10;
+    
   }
   
   .logo-text-group {
@@ -24,6 +32,7 @@
     position: absolute; /* Absolute positioning to center it */
     left: 50%;
     transform: translateX(-50%);
+    
   }
   
   .logo {
@@ -42,7 +51,8 @@
   }
   
   .lowerHalf {
-    background-color: rgba(0, 0, 0, 0.45); /* Black background with 45% transparency */
+    background-color: rgba(0, 0, 0, 0.5);
+     /* Black background with 45% transparency */
     color: white; /* White text color for visibility */
     height: 20px;
     padding: 10px; /* Padding for content */
@@ -50,6 +60,9 @@
     border-bottom: 2px solid #959595;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index:10;
+    
     
   }
   
@@ -98,7 +111,8 @@
     font-size: 17px;
     font-family: 'Gowun Batang', serif;
     letter-spacing: 1.5px;
-    transform: translateY(-15%)
+    transform: translateY(-15%);
+    cursor: pointer;
     
   }
 
