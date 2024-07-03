@@ -11,7 +11,7 @@ const ComingSoon = () => {
                 <div className='logo-name-group'>
                     <img src={logo} alt="log"  className='logo'/>
                     <span className="site-title">Leather and Style</span>
-                    <span className="sub-heading">Get Ready to Be Leathered Up: Arriving Soon!!</span>
+                    <span className="sub-heading">Get Ready to Be Leathered Up: Arriving Soon!</span>
                 </div>
             </div>
             <div className='bg'>
