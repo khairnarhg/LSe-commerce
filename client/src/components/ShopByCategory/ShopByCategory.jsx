@@ -13,7 +13,7 @@ const ShopByCategory = () => {
     <div className='main-container'>
         <div className='title-group'>
             <div className='line1'> </div>
-            <div className='title'>Shop By Category</div>
+            <div className='title1'>Shop By Category</div>
             <div className='line2'> </div>
         </div>
         <div className='categories'>
