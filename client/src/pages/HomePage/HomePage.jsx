@@ -5,6 +5,7 @@ import NewArrivals from '../../components/NewArrivals/NewArrivals';
 import BestSellers from '../../components/BestSellers/BestSellers';
 import DottedBorder from '../../components/DottedBorder/DottedBorder';
 import AboutUs from '../../components/AboutUs/AboutUs';
+import ReviewsHome from '../../components/ReviewsHome/ReviewsHome';
 const homePage = () => {
   return (
     <div className='main-page'>
@@ -15,6 +16,7 @@ const homePage = () => {
       <NewArrivals />
       <DottedBorder/>
       <AboutUs/>
+      <ReviewsHome/>
     </div>
   );
 };

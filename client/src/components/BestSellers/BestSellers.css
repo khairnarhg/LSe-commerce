@@ -20,24 +20,24 @@
 }
 
 .line11{
-   box-shadow: 2px 1.5px 1.5px grey;
-   height: 4.5px;
+   /* box-shadow: 2px 1.5px 1.5px grey; */
+   height: 2.5px;
    width: 200px;
    background-color: white;
    border-radius: 10px;
 }
 .title{
     font-size: 40px;
-    text-shadow: 1px 1px 2px pink;
+    /* text-shadow: 1px 1px 2px pink; */
     font-family: 'Gowun Batang', serif;
-    font-weight: bold;
+    /* font-weight: bold; */
     letter-spacing: 2px;
     letter-spacing: 1px;
     color: white; 
 }
 .line22{
-    box-shadow: 2px 1.5px 1.5px grey;
-    height: 4.5px;
+    /* box-shadow: 2px 1.5px 1.5px grey; */
+    height: 2.5px;
     width: 200px;
     background-color: white;
     border-radius: 10px;
