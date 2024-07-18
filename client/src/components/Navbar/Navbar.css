@@ -1,0 +1,110 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3; /* Ensure navbar is above carousel */
+}
+  .upperHalf {
+    background-color: rgba(0, 0, 0, 0.5); 
+    height: 35px;
+    color: white; 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    z-index: 2;
+
+  }
+  
+  .logo-text-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    
+  }
+  
+  .logo {
+    width: 40px; 
+    height: auto; 
+    margin-right: 10px; 
+    align-items : center;
+  }
+  
+  .site-title {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Gowun Batang', serif;
+    letter-spacing: 1.5px;
+   
+  }
+  
+  .lowerHalf {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; 
+    height: 20px;
+    padding: 10px; 
+    border-top: 2px solid #959595; 
+    border-bottom: 2px solid #959595;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .icons-group {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 3%;
+  }
+  
+  .icons-group button {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .icon {
+    width: 25px; 
+    height: auto;
+    opacity: 0.7; 
+    transition: opacity 0.3s ease; 
+  }
+  
+  .icon:hover {
+    opacity: 1; 
+  }
+  
+  
+  .navbar-button-group{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    gap: 40px;
+    align-items: center;
+   
+  }
+  
+  .navbar-button {
+
+    transition:  0.4s ease-in-out; 
+    background: transparent;
+    border: none;
+    color: white;
+  
+    font-size: 17px;
+    font-family: 'Gowun Batang', serif;
+    letter-spacing: 1.5px;
+    transform: translateY(-15%);
+    cursor: pointer;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0);
+    text-decoration: 1px solid transparent;
+  }
+  
+  .navbar-button:hover {
+    text-decoration: underline solid currentColor; 
+
+  }

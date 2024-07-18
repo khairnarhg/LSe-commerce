@@ -16,9 +16,7 @@ const AboutUs = () => {
       <div className="img3">
         <img src={img3} alt="men" />
       </div>
-      
     </div>
   );
 }
-
 export default AboutUs;

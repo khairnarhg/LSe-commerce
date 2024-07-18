@@ -1,0 +1,140 @@
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding: 2rem;
+    background-color: black;
+    color: white;
+    font-family: 'Gowun Batan', serif;
+    position:relative;
+    
+    
+  }
+  
+  .contact-header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2vw;
+    letter-spacing: 1px;
+    margin-right:auto;
+    text-decoration: underline solid white;
+    text-underline-offset: 4px;
+  }
+
+  .insta-icon{
+    position:relative;
+    height: 5vh;
+    width: auto;
+    transform: translateX(58.45vw);
+  }
+  
+  .contact-info {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:2.4vw;
+   
+  }
+  
+  .contact-details {
+    line-height: 1;
+    font-size: 1 vw;
+    text-align: left;
+    /* background-color: red; */
+  }
+
+  .contact-details-content{
+    margin-bottom: 9px;
+  }
+  .contact-links{
+    flex-basis: 20%;
+    display:flex;
+    flex-direction: column; 
+    text-align: center;
+    /* background-color: blue; */
+    text-align:left;
+    text-decoration: none;
+    color: white;
+  }
+
+  .contact-links a{
+    text-decoration:none;
+    color: white;
+  }
+  
+  .newsletter-signup {
+    flex-basis: 30%;
+    text-align: center;
+    /* background-color: blue; */
+    text-align:left;
+  }
+  
+  .contact-links a {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .newsletter-signup {
+  
+  }
+  
+  .newsletter-signup h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .newsletter-signup p {
+    margin-bottom: 1rem;
+  }
+
+  .newsletter-form{
+    margin-bottom: 0.5rem;
+
+  }
+
+  .email-input{
+    height: 5vh;
+    width: auto;
+    font-family: 'Gowun Batang', serif;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .email-input ::placeholder{
+    margin-left: 0.3rem;
+  }
+  .email-submit{
+    background-color: white;
+    margin-left: 0.3rem;
+    border-radius: 0.5rem;
+    height: 5vh;
+    width: 7vw;
+    font-family: 'Gowun Batang', serif;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  
+  
+  .contact-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+    border-top: 1px solid #ddd;
+  }
+
+  .copyright{
+    margin-right: 2rem;
+  }
+  
+  .social-media a {
+    margin-right: 1rem;
+  } 
+  

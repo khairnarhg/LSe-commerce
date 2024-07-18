@@ -1,11 +1,12 @@
 .Reviews-Home-container{
     margin-top: 30px;
-    height: 400px;
+    height: 380px;
     width: 100%;
     postion:relative;
     display: flex;
     flex-direction: column;
     font-family: 'Gowun Batang', serif;
+
 }
 
 .heading{
@@ -72,9 +73,7 @@
     font-size: 1.5vw;
     transform: translateY(-50%);
     font-weight: bold;
-    
-  
-    
+
 }
 
 .review{
