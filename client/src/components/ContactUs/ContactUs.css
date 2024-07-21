@@ -117,6 +117,8 @@
     font-family: 'Gowun Batang', serif;
     font-size: 1rem;
     font-weight: bold;
+    border: none;
+    outline:none;
   }
 
   

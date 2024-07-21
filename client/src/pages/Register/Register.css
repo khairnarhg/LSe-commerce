@@ -1,0 +1,109 @@
+.register-main-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/bg/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    font-family: 'Gowun Batang', serif;
+}
+
+.register-header{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.register-form {
+    margin-top: 0.7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the form elements */
+}
+
+.register-firstname-input,
+.register-lastname-input,
+.register-email-input,
+.register-pass-input,
+.register-phno-input,
+.Register-submit-button,
+.register-instructions {
+    width: 23vw; /* Set the same width for all inputs, button, and instructions */
+    height: 5vh;
+    border: none;
+    margin-top: 1.7vh;
+    padding-left: 10px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    font-size: 16px;
+    font-family: 'Gowun Batang', serif;
+    color: rgb(56, 13, 13, 1);
+}
+
+.register-firstname-input::placeholder,
+.register-lastname-input::placeholder,
+.register-email-input::placeholder,
+.register-pass-input::placeholder,
+.register-phno-input::placeholder {
+    font-size: 16px; 
+    font-family: 'Gowun Batang', serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+input[type="email"],
+input[type="text"] {
+    color: rgb(56, 13, 13, 1);
+    font-size: 16px; 
+    border: none; 
+    padding-left: 10px;
+    font-family: 'Gowun Batang', serif;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none; 
+}
+
+.Register-submit-button {
+    outline: none;
+    border: none;
+    background-color: rgba(16, 15, 15, 0.58);
+    color: white;
+    font-family: 'Gowun Batang', serif;
+    cursor: pointer;
+    margin-bottom: 2vh;
+    font-size: 20px;
+}
+
+.register-instructions {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-instruction1,
+.register-instruction2 {
+    font-weight: bold;
+    word-wrap: break-word; /* Ensures long words or URLs will wrap */
+    word-break: break-all; /* Breaks long words to fit within the container */
+    white-space: normal;
+    width: 100%;
+    font-size: 0.9vw;
+    justify-content: flex-start;  /* Make sure the instructions take the full width of the parent */
+}
+
+.register-ins {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-family: 'Gowun Batang', serif;
+    font-weight: bold;
+    font-size: 1vw;
+    cursor: pointer;
+    color: rgb(104, 14, 14);
+}
