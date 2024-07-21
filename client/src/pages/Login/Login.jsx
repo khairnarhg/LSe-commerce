@@ -17,7 +17,7 @@ const Login = () => {
           <img src={Google} alt="" />
           </button>
         </div>
-        <div className='instructions'>
+        <div className='recovery-instructions'>
           Please enter your e-mail and password
         </div>
         <form action="" className='login-form'>
