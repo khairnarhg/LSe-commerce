@@ -1,9 +1,9 @@
 import React from 'react'
 import './ShopByCategory.css';
 import Accessories from '../../assets/Images/Accessories.png';
-import MensBags from '../../assets/Images/mensBags.png';
+import MensBags from '../../assets/Images/mensBags.webp';
 import WomensBags from '../../assets/Images/WomensBags.jpg';
-import Apparrels from '../../assets/Images/Apparrels.png';
+import Apparrels from '../../assets/Images/Apparrels.webp';
 import TravelBags from '../../assets/Images/TravelBags.jpg';
 import Boxes from '../../assets/Images/Boxes.png';
 
@@ -13,10 +13,11 @@ const ShopByCategory = () => {
     <div className='main-container'>
         <div className='title-group'>
             <div className='line1'> </div>
-            <div className='title1'>Shop By Category</div>
+            <div className='title1'>Our Categories</div>
             <div className='line2'> </div>
         </div>
         <div className='categories'>
+            <div className='div1'>
             <div className='button-title-group'>
                 <button className='category-button'>
                     <img src={Accessories} alt="" />
@@ -33,6 +34,8 @@ const ShopByCategory = () => {
                     Men's Bags
                 </div>
             </div>
+            </div>
+            <div className='div2'>
             <div className='button-title-group'>
                 <button className='category-button'>
                     <img src={WomensBags} alt="" />
@@ -49,6 +52,8 @@ const ShopByCategory = () => {
                     Apparells
                 </div>
             </div>
+            </div>
+            <div className='div3'>
             <div className='button-title-group'>
                 <button className='category-button'>
                     <img src={TravelBags} alt="" />
@@ -62,8 +67,9 @@ const ShopByCategory = () => {
                     <img src={Boxes} alt="" />
                 </button>
                 <div className='category-name'>
-                    Boxes
+                    Giftwares
                 </div>
+            </div>
             </div>
         </div>
       

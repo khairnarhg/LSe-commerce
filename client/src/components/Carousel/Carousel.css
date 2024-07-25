@@ -1,42 +1,35 @@
-
 .Carousel {
   position: relative;
   width: 100%;
   height: 100vh;
   top: 0;
 }
-.Carousel-wrapper{
-    width: 100%;
-    height: 100vh;
 
+.Carousel-wrapper {
+  width: 100%;
+  height: 100vh;
 }
-.carousel-image{
-    display:flex;
-    width:100%;
-    height: 100vh;
-    overflow:hidden;
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.7s ease-in-out;
-    pointer-events: none;
-    border-radius: 0 0 10px 10px;
+
+.carousel-image {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.7s ease-in-out;
+  border-radius: 0 0 10px 10px;
+  background-size: cover;
+  background-position: center;
 }
 
 .carousel-image-active {
-    opacity: 1;
-    transform: scale(1);
-    pointer-events: visible;
-    
-  }
+  opacity: 1;
+  pointer-events: visible;
+}
 
-  
-  .card-image {
-    width: 100%;
-    height: 100%;
-  }
-
-  .carousel_arrow_left,
+.carousel_arrow_left,
 .carousel_arrow_right {
   position: absolute;
   font-size: 50px;
@@ -48,11 +41,8 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-  /* border: 1px solid; */
   padding-bottom: 13px;
-  /* border-radius: 50%; */
   color: white;
-
 }
 
 .carousel_arrow_left {
@@ -64,27 +54,162 @@
 }
 
 .carousel_pagination {
-    position: absolute;
-    bottom: 5px;
-    right:0;
-    transform: translate(-50%, 0);
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  transform: translate(-50%, 0);
+}
+
+.pagination_dot {
+  height: 6px;
+  width: 6px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.pagination_dot:hover {
+  transform: scale(1.2);
+}
+
+.pagination_dot-active {
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .Carousel{
+    position: relative;
+    width: 100%;
+    height: 72vh;
+    top: 0;
+
   }
   
-  .pagination_dot {
-    height: 6px;
-    width: 6px;
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 50%;
-    display: inline-block;
-    margin-left: 10px;
-    cursor: pointer;
+  .Carousel-wrapper {
+    height: 72vh;
+  }
+
+  .carousel-image {
+    height: 72vh;
+  }
+  .carousel_arrow_left,
+.carousel_arrow_right {
+  position: absolute;
+  font-size: 30px;
+  top: 50%;
+  transform: translate(0, -100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding-bottom: 13px;
+  color: white;
+}
+
+.carousel_arrow_left {
+  left: 15px;
+}
+
+.carousel_arrow_right {
+  right: 15px;
+}
+
+.carousel_pagination {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  transform: translate(-40%, 0);
+}
+
+.pagination_dot {
+  height: 6px;
+  width: 6px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.pagination_dot:hover {
+  transform: scale(1.2);
+}
+
+.pagination_dot-active {
+  background-color: white;
+}
+}
+
+@media only screen and (max-height: 700px) and (max-width: 600px) {
+  .Carousel{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    top: 0;
+
   }
   
-  .pagination_dot:hover {
-    transform: scale(1.2);
+  .Carousel-wrapper {
+    height: 80vh;
   }
-  
-  .pagination_dot-active {
-    background-color: white;
+
+  .carousel-image {
+    height: 80vh;
   }
+  .carousel_arrow_left,
+.carousel_arrow_right {
+  position: absolute;
+  font-size: 30px;
+  top: 50%;
+  transform: translate(0, -100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding-bottom: 13px;
+  color: white;
+}
+
+.carousel_arrow_left {
+  left: 15px;
+}
+
+.carousel_arrow_right {
+  right: 15px;
+}
+
+.carousel_pagination {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  transform: translate(-40%, 0);
+}
+
+.pagination_dot {
+  height: 6px;
+  width: 6px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.pagination_dot:hover {
+  transform: scale(1.2);
+}
+
+.pagination_dot-active {
+  background-color: white;
+}
+}
+
