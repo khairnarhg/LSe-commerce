@@ -9,8 +9,13 @@ import cart from '../../assets/icons/cart.png';
 
 const Navbar = () => {
   return (
-        <nav >
+        <div  className='nav'>
             <div className='upperHalf'>
+                <div className='mobile-menu-button'>
+                    <button className='menu-button'>
+                        Menu
+                    </button>
+                </div>
                 <div className="logo-text-group">
                     <img src={logo} alt="Logo" className="logo" />
                     <span className="site-title">Leather and Style</span>
@@ -49,7 +54,7 @@ const Navbar = () => {
                     </button>
                 </div> 
             </div>
-        </nav>
+        </div>
   );
 }
 

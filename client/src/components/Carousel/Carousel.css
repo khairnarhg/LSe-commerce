@@ -3,17 +3,19 @@
   width: 100%;
   height: 100vh;
   top: 0;
+  overflow: hidden;
 }
 
 .Carousel-wrapper {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  overflow: hidden;
 }
 
 .carousel-image {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 95%;
   overflow: hidden;
   position: absolute;
   opacity: 0;
@@ -21,7 +23,7 @@
   transition: 0.7s ease-in-out;
   border-radius: 0 0 10px 10px;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
 }
 
 .carousel-image-active {
@@ -34,7 +36,7 @@
   position: absolute;
   font-size: 50px;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translate(0, -80%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +59,7 @@
   position: absolute;
   bottom: 5px;
   right: 0;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -6vh);
 }
 
 .pagination_dot {
@@ -79,12 +81,13 @@
   background-color: white;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .Carousel{
     position: relative;
     width: 100%;
     height: 72vh;
-    top: 0;
+    
+    margin-top: 13vh;
 
   }
   
@@ -213,3 +216,174 @@
 }
 }
 
+
+@media (min-width: 768px) and (max-width: 1348px) and (orientation: landscape) {
+  .Carousel {
+    position: relative;
+    width: 100%;
+    height: 88vh;
+    top: 0;
+    overflow: hidden;
+  }
+  
+  .Carousel-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-image {
+    display: flex;
+    width: 100%;
+    height: 95%;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.7s ease-in-out;
+    border-radius: 0 0 10px 10px;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .carousel-image-active {
+    opacity: 1;
+    pointer-events: visible;
+  }
+  
+  .carousel_arrow_left,
+  .carousel_arrow_right {
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    transform: translate(0, -80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    padding-bottom: 13px;
+    color: white;
+  }
+  
+  .carousel_arrow_left {
+    left: 15px;
+  }
+  
+  .carousel_arrow_right {
+    right: 15px;
+  }
+  
+  .carousel_pagination {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    transform: translate(-50%, -6vh);
+  }
+  
+  .pagination_dot {
+    height: 6px;
+    width: 6px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .pagination_dot:hover {
+    transform: scale(1.2);
+  }
+  
+  .pagination_dot-active {
+    background-color: white;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .Carousel {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    margin-top: 9vh;
+    overflow: hidden;
+  }
+  
+  .Carousel-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-image {
+    display: flex;
+    width: 100%;
+    height: 95%;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.7s ease-in-out;
+    border-radius: 0 0 10px 10px;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .carousel-image-active {
+    opacity: 1;
+    pointer-events: visible;
+  }
+  
+  .carousel_arrow_left,
+  .carousel_arrow_right {
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    transform: translate(0, -80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    padding-bottom: 13px;
+    color: white;
+  }
+  
+  .carousel_arrow_left {
+    left: 15px;
+  }
+  
+  .carousel_arrow_right {
+    right: 15px;
+  }
+  
+  .carousel_pagination {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    transform: translate(-50%, -2vh);
+  }
+  
+  .pagination_dot {
+    height: 6px;
+    width: 6px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .pagination_dot:hover {
+    transform: scale(1.2);
+  }
+  
+  .pagination_dot-active {
+    background-color: white;
+  }
+}

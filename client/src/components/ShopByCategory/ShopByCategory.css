@@ -19,7 +19,6 @@
     font-size: 40px;
     text-shadow: 1px 1px 2px pink;
     font-family: 'Gowun Batang', serif;
-    /* font-weight: bold; */
     letter-spacing: 2px;
     color: black;
 }
@@ -47,7 +46,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10%;
+    gap: 6vw;
     
 }
 
@@ -56,13 +55,13 @@
     justify-content: center;
     align-items:center;
     flex-direction: column;
-    gap: 17px;
+    gap: 3vh;
     
 }
 
 .category-button{
     height: 115px;
-    width: 8vw;
+    width: 115px;
     border-radius: 100%;
     border: 0px;
     background-color: transparent;
@@ -79,6 +78,7 @@ img{
 
 }
 
+
 .category-name{
     font-family: 'Gowum Batang', serif;
     font-size: 20px;
@@ -89,19 +89,19 @@ img{
 .div1{
     display: flex;
     justify-content: center;
-    gap: 30%;
+    gap: 6vw;
 
 }
 .div2{
     display: flex;
     justify-content: center;
-    gap: 30%;
+    gap: 6vw;
     
 }
 .div3{
     display: flex;
     justify-content: center;
-    gap: 30%;
+    gap: 6vw;
     
 }
 
@@ -112,21 +112,21 @@ img{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 4%;
+        gap: 2%;
         
     }
     .title1{
-        font-size: 30px;
+        font-size: 25px;
         text-shadow: 1px 1px 2px pink;
         font-family: 'Gowun Batang', serif;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         color: black;
     }
     
     .line1{
     box-shadow: 2px 1.5px 1.5px grey;
        height: 2px;
-       width: 65px;
+       width: 16vw;
        background-color: black;
        border-radius: 10px;
      
@@ -135,18 +135,18 @@ img{
         
         box-shadow: 2px 1.5px 1.5px grey;
         height: 2px;
-        width: 65px;
+        width: 16vw;
         background-color: black;
         border-radius: 10px;
     }
     
     .categories{
-        margin-top: 8vh;
+        margin-top: 4vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap:4vh;
 
     }
     
@@ -155,7 +155,7 @@ img{
         justify-content: center;
         align-items:center;
         flex-direction: column;
-        gap: 17px;
+        gap: 2vh;
         
     }
     
@@ -180,10 +180,100 @@ img{
     
     .category-name{
         font-family: 'Gowum Batang', serif;
-        font-size: 20px;
+        font-size: 17px;
         letter-spacing: 1px;
         text-shadow: 1px 1px 2px grey;
     }
 
 }
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* Styles for landscape tablets */
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .title-group{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+        
+    }
+    .title1{
+        font-size: 25px;
+        text-shadow: 1px 1px 2px pink;
+        font-family: 'Gowun Batang', serif;
+        letter-spacing: 1px;
+        color: black;
+    }
+    
+    .line1{
+    box-shadow: 2px 1.5px 1.5px grey;
+       height: 2px;
+       width: 16vw;
+       background-color: black;
+       border-radius: 10px;
+     
+    }
+    .line2{
+        
+        box-shadow: 2px 1.5px 1.5px grey;
+        height: 2px;
+        width: 16vw;
+        background-color: black;
+        border-radius: 10px;
+    }
+    
+    .categories{
+        margin-top: 4vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:4vh;
+
+    }
+    
+    .button-title-group{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        gap: 2vh;
+        
+    }
+    
+    .category-button{
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        border: 0px;
+        background-color: transparent;
+        box-shadow: 3px 2px 2px grey;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    img{
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+        overflow: hidden;
+    
+    }
+    
+    .category-name{
+        font-family: 'Gowum Batang', serif;
+        font-size: 17px;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 2px grey;
+    }
+
+    .div1, .div2, .div3{
+        display: flex;
+        gap: 20vw;
+    }
+  }
+  
 

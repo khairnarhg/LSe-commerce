@@ -6,7 +6,7 @@ import bg3 from '../../assets/Images/bg3.webp';
 import bg4 from '../../assets/Images/bg4.webp';
 import bg5 from '../../assets/Images/bg5.webp';
 import bg11 from '../../assets/Images/bg11.webp';
-import bg22 from '../../assets/Images/bg22.webp';
+import bg22 from '../../assets/Images/bg22.png';
 import bg33 from '../../assets/Images/bg33.webp';
 import bg44 from '../../assets/Images/bg44.webp';
 import bg55 from '../../assets/Images/bg55.webp';

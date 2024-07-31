@@ -57,3 +57,12 @@
 }
 
 
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .upperHalf1 {
+    background-color: rgba(50, 0, 1, 0.9); 
+  }
+}
+
+
+

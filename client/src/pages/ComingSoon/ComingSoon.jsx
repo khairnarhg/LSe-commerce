@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import logo from '../../assets/logos/newlogonobgw.png';
 import './ComingSoon.css';
 import Carousel from '../../components/Carousel/Carousel';
@@ -26,4 +26,4 @@ const ComingSoon = () => {
   );
 }
 
-export default ComingSoon
+export default ComingSoon;

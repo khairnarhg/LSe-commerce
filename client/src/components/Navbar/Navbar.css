@@ -108,3 +108,54 @@ nav {
     text-decoration: underline solid currentColor; 
 
   }
+
+  .mobile-menu-button{
+    display:none;
+  }
+
+  @media only screen and (max-width: 768px){
+    .nav{
+      position: fixed;
+      top: 0;
+      width: 100%;
+
+    }
+    .upperHalf{
+      height: 60px;
+      align-items:center;
+      position: relative;
+      background-color: rgba(50, 0, 1, 0.9); 
+      display: flex;
+      justify-content: center;
+      gap:0;
+    }
+    .logo-text-group{
+
+      display:flex;
+      align-items:center;
+      width: 80vw;
+      position: relative;
+      
+    }
+    .logo {
+      width: 10vw;
+    }
+  
+    .site-title {
+      font-size: 7vw;
+    }
+    .icons-group{
+      display:none;
+    }
+    .lowerHalf{
+      display: none;
+    }
+
+    .mobile-menu-button{
+      display: block;
+      margin-right: 0;
+
+    }
+  }
+
+  
