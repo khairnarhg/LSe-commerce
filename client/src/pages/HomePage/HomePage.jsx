@@ -20,7 +20,7 @@ const homePage = () => {
         <BestSellers/>
         <DottedBorder/>
         <NewArrivals />
-        <DottedBorder/>
+        {/* <DottedBorder/> */}
         <AboutUs/>
         <ReviewsHome/>
         <ContactUs/>
