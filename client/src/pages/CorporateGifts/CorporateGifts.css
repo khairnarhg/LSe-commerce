@@ -1,0 +1,13 @@
+.corporate-gifts-main-container{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/bg/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.corporate-gifts-container{
+    height: 100vh;
+    width: 100%;
+}

@@ -55,7 +55,7 @@ const Profile = () => {
             </div>
 
         </div>
-        <ContactUs/>
+        <ContactUs className='contact-us-profile'/>
     </div>
   )
 }
