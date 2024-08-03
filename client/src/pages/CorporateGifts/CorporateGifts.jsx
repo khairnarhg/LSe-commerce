@@ -1,12 +1,13 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import './CorporateGifts.css';
 import Navbar from '../../components/Navbar/Navbar';
 import ContactUs from '../../components/ContactUs/ContactUs';
 import Cgbg from '../../assets/bg/bg2.webp';
 const CorporateGifts = () => {
+  const contactUsRef = useRef(null);
   return (
     <div className="corporate-gifts-main-container">
-      <Navbar/>
+      <Navbar contactUsRef={contactUsRef}/>
       <div className="corporate-gifts-container">
         <div className='cg-white-blur-bg'>
           <div className="intro-image">
@@ -45,7 +46,9 @@ const CorporateGifts = () => {
           </div>
         </div>
       </div>
-      <ContactUs/>
+      <div ref={contactUsRef}>
+        <ContactUs />
+      </div>
     </div>
   )
 }

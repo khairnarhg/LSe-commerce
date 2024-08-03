@@ -1,5 +1,6 @@
-import React from 'react';
+import React , { useRef } from 'react';
 import './HomePage.css';
+import { useNavigate } from 'react-router-dom';
 import Carousel from '../../components/Carousel/Carousel';
 import ShopByCategory from '../../components/ShopByCategory/ShopByCategory';
 import NewArrivals from '../../components/NewArrivals/NewArrivals';
@@ -9,11 +10,12 @@ import AboutUs from '../../components/AboutUs/AboutUs';
 import ReviewsHome from '../../components/ReviewsHome/ReviewsHome';
 import Navbar from '../../components/Navbar/Navbar';
 import ContactUs from '../../components/ContactUs/ContactUs';
-const homePage = () => {
+const HomePage = () => {
+  const contactUsRef = useRef(null);
 
   return (
     <div className='main-page'>
-      <Navbar className='navbar'/>
+      <Navbar className='navbar' contactUsRef={contactUsRef}/>
       <div className="content">
         <Carousel className='carousel'/>
         <ShopByCategory />
@@ -23,12 +25,14 @@ const homePage = () => {
         {/* <DottedBorder/> */}
         <AboutUs/>
         <ReviewsHome/>
-        <ContactUs/>
+        <div ref={contactUsRef}>
+          <ContactUs/>
+        </div>
       </div>
     </div>
   );
 };
 
-export default homePage;
+export default HomePage;
 
  

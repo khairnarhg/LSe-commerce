@@ -1,12 +1,18 @@
-import React from 'react';
+import React , { useRef } from 'react';
 import './Register.css';
+import { useNavigate } from 'react-router-dom';
 import Navbar from '../../components/Navbar/Navbar';
 import ContactUs from '../../components/ContactUs/ContactUs';
 
 const Register = () => {
+  const contactUsRef = useRef(null);
+  const navigate = useNavigate();
+  const navigateTo=(path)=>{
+    navigate(path);
+  }
   return (
     <div className='register-container'>
-      <Navbar/>
+      <Navbar contactUsRef={contactUsRef}/>
       <div className="register-main-container">
         <div className='register-header'>
           Register
@@ -28,13 +34,15 @@ const Register = () => {
             * I hereby authorize to send notifications on SMS/ Messages/Promotional /informational messages.
             </div>
           </div>
-          <button className='Register-submit-button'>
+          <button className='Register-submit-button' onClick={()=>navigateTo('/')}>
             Register
           </button>
         </form>
 
       </div>
-      <ContactUs/>
+      <div ref={contactUsRef}>
+        <ContactUs />
+      </div>
 
         
       

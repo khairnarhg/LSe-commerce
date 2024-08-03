@@ -1,5 +1,5 @@
 import React from 'react';
-import './FullShop.css';
+import './FullShop.css'; 
 
 const FullShop = () => {
   return (

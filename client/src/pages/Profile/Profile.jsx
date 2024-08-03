@@ -1,12 +1,14 @@
-import React from 'react';
+import React , { useRef } from 'react';
 import './Profile.css';
 import Navbar from '../../components/Navbar/Navbar';
 import ContactUs from '../../components/ContactUs/ContactUs';
 
 const Profile = () => {
+    const contactUsRef = useRef(null);
   return (
+    
     <div className='Profile-container'>
-        <Navbar/>
+        <Navbar contactUsRef={contactUsRef}/>
         <div className='Profile-main-container'>
             <div className='white-blur-screen'>
                 <div className='left-part'>
@@ -55,7 +57,9 @@ const Profile = () => {
             </div>
 
         </div>
-        <ContactUs className='contact-us-profile'/>
+        <div ref={contactUsRef}>
+        <ContactUs/>
+      </div>
     </div>
   )
 }

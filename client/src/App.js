@@ -11,14 +11,16 @@ import AboutUs from './pages/AboutUs/AboutUs.jsx';
 import FullShop from './pages/FullShop/FullShop.jsx';
 import Product from './pages/Product/Product.jsx';
 import Cart from './pages/Cart/Cart.jsx';
+import { AuthProvider } from './utils/AuthContext.js'
 
 function App() {
   return (
     <div className="App">
+      <AuthProvider>
       <Router>
         <Routes>
-          <Route path="/" element={<ComingSoon/>}/>
-          <Route path="/homePage" element={<HomePage/>}/>
+          <Route path="/" element={<HomePage/>}/>
+          {/* <Route path="/homePage" element={<HomePage/>}/> */}
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
           <Route path="/recovery" element={<Recovery/>}/>
@@ -31,6 +33,7 @@ function App() {
         </Routes>
 
       </Router>
+      </AuthProvider>
     </div>
   );
 }

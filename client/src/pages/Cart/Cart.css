@@ -1,0 +1,31 @@
+.cart-main-container{
+    background-image: url('../../assets/bg/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.cart-container{
+    display:flex;
+    height: 70rem;
+    width: 100%;
+    align-items:center;
+    justify-content: center;
+}
+
+.cart-white-blur-bg{
+    margin-top: 4rem;
+    height: 80%;
+    width: 90%;
+    background-color: rgb(255,255,255,1);
+    border-radius: 20px;
+}
+
+.cart-header{
+    font-family: 'Gowun Batang', serif;
+    font-size: 1.7rem;
+    margin-top: 0.5rem;
+    text-align: left;
+    margin-left: 1rem;
+}
+

@@ -18,7 +18,7 @@ function ContactUs() {
         </div>
         <div className="contact-links">
           <div className='papers-heading'>Info</div>
-          <a href="#">FAQ</a>
+          {/* <a href="#">FAQ</a> */}
           <a href="#">Return Policy</a>
           <a href="#">Privacy Policy</a>
           <a href="#">Terms and Conditions</a>
