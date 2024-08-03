@@ -1,5 +1,5 @@
 .corporate-gifts-main-container{
-    height: 100vh;
+    height: 250vh;
     width: 100%;
     background-image: url('../../assets/bg/bg1.png');
     background-repeat: no-repeat;
@@ -8,6 +8,104 @@
 }
 
 .corporate-gifts-container{
-    height: 100vh;
+    
+    height: 220vh;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.cg-white-blur-bg{
+    margin-top: 50vh;
+    height: 100%;
+    width: 90%;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+
+}
+
+.intro-image{
+    width: 93%;
+    margin-top: 6vh;
+}
+
+.intro-image img{
     width: 100%;
 }
+
+.form-area{
+    background-color: rgb(230,21,21,0.08);
+    width: 92.5%;
+}
+
+.form-title-cg{
+    margin-top: 2vh;
+    font-family: 'Gowun Batang', serif;
+    font-size: 2vw;
+    margin-bottom: 10vh;
+}
+
+.CG-Form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+}
+
+.chote-inputs{
+    display: flex;
+    flex-direction: row;
+    gap: 7vw;
+}
+
+.form-right,
+.form-left{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.form-right input,
+.form-left input{
+    height: 2.5rem;
+    width: 25vw;
+}
+
+#big-input{
+    width: 57vw;
+    height: 20vh;
+    border: none;
+    elevation: none;
+    font-family: 'Gowun Batang', serif;
+    font-size: 1rem;
+}
+
+.submit-button{
+    height: 3rem;
+    width: 6rem;
+    outline: none;
+    border: none;
+    elevation: 0.5;
+    background-color: rgb(153,31,31,0.68);
+    color: white;
+    border-radius: 10rem;
+    cursor: pointer;
+    font-family: 'Gowun Batang', serif;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.extra-info{
+    margin: 2vw;
+    font-family: 'Gowun Batang', serif;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+

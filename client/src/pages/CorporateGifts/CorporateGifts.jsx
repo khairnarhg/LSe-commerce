@@ -19,23 +19,23 @@ const CorporateGifts = () => {
             <form className='CG-Form'>
               <div className='chote-inputs'>
                 <div className="form-left">
-                  <input type="text" />
-                  <input type="text" />
-                  <input type="text" />
-                  <input type="text" />
+                  <input type="text" placeholder='First Name*'/>
+                  <input type="text" placeholder='Email Address*'/>
+                  <input type="text" placeholder='Company*'/>
+                  <input type="text" placeholder='Quantities*'/>
                 </div>
                 <div className="form-right">
-                  <input type="text" />
-                  <input type="text" />
-                  <input type="text" />
-                  <input type="text" />
+                  <input type="text" placeholder='Last Name*'/>
+                  <input type="text" placeholder='Phone*'/>
+                  <input type="text" placeholder='Country*'/>
+                  <input type="text" placeholder='Product*'/>
                 </div>
               </div>
               <div className="bada-input">
-                <textarea name="" id=""></textarea>
+                <textarea name="" id="big-input" placeholder='Add a message (optional)' ></textarea>
               </div>
               <button className='submit-button'>
-                Submit
+                Send
               </button>
             </form>
             <div className="extra-info">
