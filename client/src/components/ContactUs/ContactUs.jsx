@@ -23,7 +23,7 @@ function ContactUs() {
           <a href="#">Privacy Policy</a>
           <a href="#">Terms and Conditions</a>
         </div>
-        <div className="newsletter-signup">
+        {/* <div className="newsletter-signup">
         <a href="https://www.instagram.com/leatherandstyle.thane/" target="_blank" rel="noopener noreferrer">
           <img src={insta} alt="" className='insta-icon'/>
         </a>
@@ -34,7 +34,7 @@ function ContactUs() {
             <input type="email" placeholder="Enter Your Email Id" className='email-input'/>
             <button type="submit" className='email-submit'>Subscribe</button>
           </form>
-        </div>
+        </div> */}
       </div>
       <footer className="contact-footer">
         <p className='copyright'>Copyright&copy; 2024</p>

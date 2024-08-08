@@ -6,9 +6,14 @@ import WomensBags from '../../assets/Images/WomensBags.jpg';
 import Apparrels from '../../assets/Images/Apparrels.webp';
 import TravelBags from '../../assets/Images/TravelBags.jpg';
 import Boxes from '../../assets/Images/Boxes.png';
+import { useNavigate } from 'react-router-dom';
 
 
 const ShopByCategory = () => {
+    const navigate= useNavigate();
+    const navigateTo=(path)=>{
+        navigate(path);
+    }
   return (
     <div className='main-container'>
         <div className='title-group'>
@@ -19,7 +24,7 @@ const ShopByCategory = () => {
         <div className='categories'>
             <div className='div1'>
             <div className='button-title-group'>
-                <button className='category-button'>
+                <button className='category-button'onClick={()=>navigateTo('/accessories')}>
                     <img src={Accessories} alt="" />
                 </button>
                 <div className='category-name'>
@@ -27,7 +32,7 @@ const ShopByCategory = () => {
                 </div>
             </div>
             <div className='button-title-group'>
-                <button className='category-button'>
+                <button className='category-button' onClick={()=>navigateTo('/mensbags')}>
                     <img src={MensBags} alt="" />
                 </button>
                 <div className='category-name'>
@@ -37,7 +42,7 @@ const ShopByCategory = () => {
             </div>
             <div className='div2'>
             <div className='button-title-group'>
-                <button className='category-button'>
+                <button className='category-button'onClick={()=>navigateTo('/womensbags')}>
                     <img src={WomensBags} alt="" />
                 </button>
                 <div className='category-name'>
@@ -45,7 +50,7 @@ const ShopByCategory = () => {
                 </div>
             </div>
             <div className='button-title-group'>
-                <button className='category-button'>
+                <button className='category-button'onClick={()=>navigateTo('/apparels')}>
                     <img src={Apparrels} alt="" />
                 </button>
                 <div className='category-name'>
@@ -55,7 +60,7 @@ const ShopByCategory = () => {
             </div>
             <div className='div3'>
             <div className='button-title-group'>
-                <button className='category-button'>
+                <button className='category-button'onClick={()=>navigateTo('/travelbags')}>
                     <img src={TravelBags} alt="" />
                 </button>
                 <div className='category-name'>
@@ -63,7 +68,7 @@ const ShopByCategory = () => {
                 </div>
             </div>
             <div className='button-title-group'>
-                <button className='category-button'>
+                <button className='category-button'onClick={()=>navigateTo('/giftwares')}>
                     <img src={Boxes} alt="" />
                 </button>
                 <div className='category-name'>

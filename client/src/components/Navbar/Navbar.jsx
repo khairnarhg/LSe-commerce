@@ -9,11 +9,17 @@ import heart from '../../assets/icons/heart.png';
 import cart from '../../assets/icons/cart.png';
 import Menu from '../../assets/icons/menuwhite.png';
 import CloseIcon from '../../assets/icons/crosswhite.png';
+import Shop from '../Shop/Shop';
+import SearchMenu from '../Search/Search';
+
+
 
 const Navbar = ({ contactUsRef }) => {
   // const { isAuthenticated, logout } = useAuth();
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isShopOpen, setIsShopOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const menuRef = useRef(null);
 
   // const handleProfileClick = () => {
@@ -23,6 +29,21 @@ const Navbar = ({ contactUsRef }) => {
   //     navigate('/login');
   //   }
   // };
+
+  const toggleShop = () => {
+    setIsShopOpen(!isShopOpen);
+  };
+  const toggleSearch = () => {
+    setIsSearchOpen(!isSearchOpen);
+  };
+
+  const closeSearch = () => {
+    setIsSearchOpen(false);
+  };
+
+  const closeShop = () => {
+    setIsShopOpen(false);
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -69,13 +90,13 @@ const Navbar = ({ contactUsRef }) => {
           </button>
           <ul>
             <li><a href="#" onClick={() => navigateTo('/aboutus')}>About US</a></li>
-            <li><a href="#" onClick={() => navigateTo('/shop')}>Shop</a></li>
-            <li><a href="#" onClick={() => navigateTo('/collections')}>Collection</a></li>
+            <li><a href="#" onClick={toggleShop}>Shop</a></li>
+            {/* <li><a href="#" onClick={() => navigateTo('/collections')}>Collection</a></li> */}
             <li><a href="#" onClick={() => navigateTo('/corporategifts')}>Corporate Gifts</a></li>
             <li><a href="#" onClick={() => navigateTo('contact')}>Contact Us</a></li>
-            <li><a href="#" onClick={() => navigateTo('/wishlist')}>Wishlist</a></li>
-            <li><a href="#" onClick={() => navigateTo('/cart')}>Cart</a></li>
-            <li><a href="#" onClick={() => navigateTo('/login')}>Profile</a></li>
+            {/* <li><a href="#" onClick={() => navigateTo('/wishlist')}>Wishlist</a></li>
+            <li><a href="#" onClick={() => navigateTo('/cart')}>Cart</a></li> */}
+            {/* <li><a href="#" onClick={() => navigateTo('/login')}>Profile</a></li> */}
           </ul>
         </div>
         <div className="logo-text-group" onClick={() => navigateTo('/')}>
@@ -86,26 +107,28 @@ const Navbar = ({ contactUsRef }) => {
           <button onClick={()=> navigateTo('/login')}>
             <img src={profile} alt="Profile" className="icon" />
           </button>
-          <button onClick={() => navigateTo('/search')}>
+          <button onClick={toggleSearch}>
             <img src={search} alt="Search" className="icon" />
           </button>
-          <button onClick={() => navigateTo('/wishlist')}>
+          {/* <button onClick={() => navigateTo('/wishlist')}>
             <img src={heart} alt="Heart" className="icon" />
           </button>
           <button onClick={() => navigateTo('/cart')}>
             <img src={cart} alt="Cart" className="icon" />
-          </button>
+          </button> */}
         </div>
       </div>
       <div className="lowerHalf">
         <div className="navbar-button-group">
           <button className="navbar-button" onClick={() => navigateTo('/aboutus')}>About Us</button>
-          <button className="navbar-button" onClick={() => navigateTo('/shop')}>Shop</button>
-          <button className="navbar-button" onClick={() => navigateTo('/collections')}>Collections</button>
+          <button className="navbar-button" onClick={toggleShop}>Shop</button>
+          {/* <button className="navbar-button" onClick={() => navigateTo('/collections')}>Collections</button> */}
           <button className="navbar-button" onClick={() => navigateTo('/corporategifts')}>Corporate Gifts</button>
           <button className="navbar-button" onClick={scrollToContactUs}>Contacts</button>
         </div>
       </div>
+      <Shop isOpen={isShopOpen} onClose={closeShop} />
+      <SearchMenu isOpen={isSearchOpen} onClose={closeSearch} />
     </div>
   );
 };

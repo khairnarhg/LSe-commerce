@@ -9,10 +9,10 @@ const NewArrivals = () => {
             <div className="line22"></div>
         </div>
         <div className='blur-bg' >
-            <div className='products'>
+            <div className='products1'>
                 <button className='image-title-group'>
                     <img src="" alt="" className='product-photo'/>
-                    <div className='product-title'> Product Name</div>
+                    <div className='product-title'>Yoshi 2</div>
                 </button>
             </div>
 

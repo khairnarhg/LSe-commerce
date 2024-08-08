@@ -8,7 +8,12 @@ import Recovery from './pages/Recovery/Recovery.jsx';
 import Profile from './pages/Profile/Profile.jsx';
 import CorporateGifts from './pages/CorporateGifts/CorporateGifts.jsx';
 import AboutUs from './pages/AboutUs/AboutUs.jsx';
-import FullShop from './pages/FullShop/FullShop.jsx';
+import WomensBags from './pages/FullShop/WomensBags/WomensBags.jsx';
+import MensBags from './pages/FullShop/MensBags/MensBags.jsx';
+import Accessories from './pages/FullShop/Accessories/Accessories.jsx';
+import TravelBags from './pages/FullShop/TravelBags/TravelBags.jsx';
+import Apparels from './pages/FullShop/Apparels/Apparels.jsx';
+import Giftwares from './pages/FullShop/Giftwares/Giftwares.jsx';
 import Product from './pages/Product/Product.jsx';
 import Cart from './pages/Cart/Cart.jsx';
 import { AuthProvider } from './utils/AuthContext.js'
@@ -27,9 +32,14 @@ function App() {
           <Route path="/profile" element={<Profile/>}/>
           <Route path="/corporategifts" element={<CorporateGifts/>}/>
           <Route path="/aboutus" element={<AboutUs/>}/>
-          <Route path="/fullshop" element={<FullShop/>}/>
+          <Route path="/womensbags" element={<WomensBags/>}/>
+          <Route path="/mensbags" element={<MensBags/>}/>
+          <Route path="/accessories" element={<Accessories/>}/>
+          <Route path="/travelbags" element={<TravelBags/>}/>
+          <Route path="/apparels" element={<Apparels/>}/>
+          <Route path="/giftwares" element={<Giftwares/>}/>
           <Route path="/products" element={<Product/>}/>
-          <Route path="/cart" element={<Cart/>}/>
+          {/* <Route path="/cart" element={<Cart/>}/> */}
         </Routes>
 
       </Router>

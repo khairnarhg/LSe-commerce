@@ -4,9 +4,10 @@
   width: 100%;
   z-index: 3; /* Ensure navbar is above carousel */
 }
+
   .upperHalf {
     background-color: rgba(0, 0, 0, 0.5); 
-    height: 50px;
+    height: 60px;
     color: white; 
     padding: 10px;
     display: flex;
@@ -24,7 +25,7 @@
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
-    
+    gap: 1vw; 
   }
   
   .logo {
@@ -35,11 +36,10 @@
   }
   
   .site-title {
-    font-size: 50px;
-    /* font-weight: bold; */
+    font-size: 55px;
+    font-weight: bold;
     font-family: 'Gowun Batang', serif;
     letter-spacing: 1.5px;
-   
   }
   
   .lowerHalf {
@@ -79,23 +79,19 @@
     opacity: 1; 
   }
   
-  
   .navbar-button-group{
     display: flex;
     justify-content: center;
     background: transparent;
     gap: 40px;
     align-items: center;
-   
   }
   
   .navbar-button {
-
     transition:  0.4s ease-in-out; 
     background: transparent;
     border: none;
     color: white;
-  
     font-size: 17px;
     font-family: 'Gowun Batang', serif;
     letter-spacing: 1.5px;
@@ -127,6 +123,7 @@
       width: 100%;
 
     }
+
     .upperHalf{
       height: 60px;
       align-items:center;
@@ -136,14 +133,12 @@
       justify-content: center;
       gap:0;
     }
-    .logo-text-group{
 
+    .logo-text-group{
       display:flex;
       align-items:center;
       width: 80vw;
-      /* position: relative; */
       margin-left: 3.5vh;
-      
     }
     .logo {
       width: 10vw;
@@ -190,6 +185,7 @@
     .menu.open {
       left: 0; /* Slide in from the left */
     }
+
     .close-button {
       background: transparent;
       border: none;
@@ -216,12 +212,10 @@
     }
   
     .menu ul li {
-      
       padding: 1rem 3rem;
     }
   
     .menu ul li a {
-      
       color: white;
       text-decoration: none;
       font-size: 1.2rem;
@@ -239,6 +233,7 @@
       width: 100%;
       z-index: 3; /* Ensure navbar is above carousel */
     }
+
     .logo {
       width: 6vw; 
       height: auto; 
@@ -250,16 +245,16 @@
       font-size: 5vw;
       font-family: 'Gowun Batang', serif;
       letter-spacing: 1.5px;
-     
     }
 
     .upperHalf{
       background-color: rgb(50, 0,1, 0.9);
     }
+
     .lowerHalf{
       background-color: rgb(50, 0,1, 0.9);
-
     }
+
   }
 
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
@@ -280,16 +275,16 @@
       font-size: 5vw;
       font-family: 'Gowun Batang', serif;
       letter-spacing: 1.5px;
-     
     }
 
     .upperHalf{
       background-color: rgb(50, 0,1, 0.9);
     }
+
     .lowerHalf{
       background-color: rgb(50, 0,1, 0.9);
-
     }
+
   }
 
   
