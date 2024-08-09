@@ -19,6 +19,9 @@ const Accessories = () => {
       <div className="tagline">
         "Elevate Every Detail with Luxurious Leather Accessories."
       </div>
+      <div className="Discount-line">
+        *30% Discount on all the products
+      </div>
       <div className="product-area">
         <div className="a-div1">
           <div className='product'>

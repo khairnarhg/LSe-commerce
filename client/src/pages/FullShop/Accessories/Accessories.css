@@ -17,6 +17,7 @@
 .a-header{
     font-size: 1.5rem;
     font-weight: bold;
+    letter-spacing: 3px;
 
 }
 .image-area{
@@ -73,6 +74,13 @@
     font-size: 1rem;
 }
 
-
+.Discount-line{
+    width: 60%;
+    padding: 1rem;
+    background-color: red;
+    color: white;
+    margin-top: 2vh;
+    border-radius: 20px;
+}
 
 }

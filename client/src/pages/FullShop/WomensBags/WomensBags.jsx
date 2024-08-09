@@ -19,6 +19,9 @@ const WomensBags = () => {
       <div className="tagline">
       "Timeless Elegance, Crafted for the Modern Woman."
       </div>
+      <div className="Discount-line">
+        *30% Discount on all the products
+      </div>
       <div className="product-area">
         <div className="a-div1">
           <div className='product'>
