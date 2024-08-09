@@ -56,7 +56,7 @@ const NewArrivals = () => {
             <div key={index} className='carousel-item'>
               
               <img src={product.image} alt={product.name} className='product-photo1' />
-              <div className='product-title'>
+              <div className='product-title1'>
                 <div className='product-name'>{product.name}</div>
                 <span>₹ {product.d_price} MRP <span className='cut-price'>₹{product.a_price}</span>/-</span>
               </div>
