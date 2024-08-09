@@ -2,7 +2,7 @@
     margin-top: 30px;
     height: 380px;
     width: 100%;
-    postion:relative;
+    position:relative;
     display: flex;
     flex-direction: column;
     font-family: 'Gowun Batang', serif;
@@ -27,7 +27,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgb(0,0,0,0.7);
+    /* border: 1px solid rgb(0,0,0,0.7); */
     border-radius: 7px;
     padding: 2vw;
 }
@@ -55,9 +55,7 @@
 
 
 
-.star-rating{
 
-}
 
 .review-detail{
     display: flex;
@@ -85,81 +83,59 @@
 }
 
 @media only screen and (max-width: 768px){
-    .Reviews-Home-container{
-        margin-top: 30px;
-        height: 35vh;
+    .Reviews-Home-container {
         width: 100%;
-        postion:relative;
-        display: flex;
-        flex-direction: column;
-        font-family: 'Gowun Batang', serif;
-    
-    }
-    
-    .heading{
-        font-size: 4.5vw;
-        font-family: 'Gowun Batang', serif;
-    }
-    
-    .reviews-space{
-        padding: 5%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .reviews-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid rgb(0,0,0,0.7);
-        border-radius: 7px;
-        padding: 2vw;
-    }
-    
-    .product-details{
-        margin-right: 1vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-weight: bold;
-        
-    
-    }
-    
-    .product-image{
-        width: 30vw;
-        height: 17vh;
-    }
-    
-    .review-detail{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
-    }
-    
-    .person-name{
-        margin-top: 1vh;
-        margin-left: 2vw;
-        position: relative;
-        font-size: 5vw;
-        transform: translateY(-50%);
-        font-weight: bold;
-    
-    }
-    
-    .review{
-        position: relative;
-        height: 7vh;
-        width:  50vw;
-        /* background-color: red; */
-    
-    }
+        height: 640px;
+        overflow: hidden;
+        margin: 0 auto;
+      }
 
+      .heading{
+        margin-top: 1vh;
+        font-size: 6vw;
+        margin-bottom: 2vh;
+      }
+
+      .reviews-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        gap: 4vh;
+      }
+      
+      .rp-3,
+      .rp-2,
+      .rp-1{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        gap: 5vw;
+
+      }
+
+
+      .review-detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        width: 50%;
+      }
+
+      .person-name{
+        font-size: 4vw;
+        font-weight: bold;
+        width: 100%;
+      }
+
+      .review{
+        font-size: 3.5vw;
+        width: 80%;        
+        
+      }
+
+      
    
 
 }
@@ -196,8 +172,7 @@
         justify-content: center;
         align-items: center;
         font-weight: bold;
-        
-    
+
     }
     
     .product-image{
@@ -210,19 +185,11 @@
         width: 100%;
     }
     
-    
-    
-    .star-rating{
-    
-    }
-    
     .review-detail{
         display: flex;
         flex-direction: column;
         justify-content: center;
         position: relative;
-        
-        /* font-weight: bold; */
     }
     
     .person-name{
