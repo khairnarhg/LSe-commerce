@@ -24,45 +24,31 @@ const TravelBags = () => {
       <div className="product-area">
         <div className="a-div1">
           <div className='product'>
-            <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688064/IMPBELT_qfn8ns.webp" alt="" className='product-img'/>
+            <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688065/laptop_3_rdsvkf.webp" alt="" className='product-img'/>
             <div className='product-title'>
-                  <div className='product-name'>Imp Belt</div>
-                  <span className='prices'>₹ 788 MRP <span className='cut-price'>₹ 1125</span>/-</span>
+                  <div className='product-name'>Over nighter</div>
+                  <span className='prices'>₹ 4725 MRP <span className='cut-price'>₹ 6750</span>/-</span>
             </div>
           </div>
           <div className='product'>
-            <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688064/IMPBELT2_zvaeuj.webp" alt="" className='product-img'/>
+            <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688067/trolly_2_fwjbaw.webp" alt="" className='product-img'/>
             <div className='product-title'>
-                  <div className='product-name'>Men's Belt</div>
-                  <span className='prices'>₹ 623 MRP <span className='cut-price'>₹ 890</span>/-</span>
+                  <div className='product-name'>Laptop Trolley</div>
+                  <span className='prices'>₹ 9870 MRP <span className='cut-price'>₹ 14100</span>/-</span>
             </div>
           </div>
         </div>
         <div className="a-div1">
         <div className='product'>
-            <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688061/walletBr_mi0ofc.webp" alt="" className='product-img'/>
+            <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688066/luggage_2_dggdrq.webp" alt="" className='product-img'/>
             <div className='product-title'>
-                  <div className='product-name'>Imp Belt</div>
-                  <span className='prices'>₹ 578 MRP <span className='cut-price'>₹ 825</span>/-</span>
+                  <div className='product-name'>Shoe Duffel</div>
+                  <span className='prices'>₹ 4725 MRP <span className='cut-price'>₹ 6750</span>/-</span>
             </div>
           </div>
-          <div className='product'>
-            <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688061/walletT_yc5avt.webp" alt="" className='product-img'/>
-            <div className='product-title'>
-                  <div className='product-name'>Imp Belt</div>
-                  <span className='prices'>₹ 525  MRP <span className='cut-price'>₹ 750</span>/-</span>
-            </div>
-          </div>
+          
         </div>
-        <div className="a-div3">
-        <div className='product'>
-            <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688061/wallet_vdjvef.webp" alt="" className='product-img'/>
-            <div className='product-title'>
-                  <div className='product-name'>Imp Belt</div>
-                  <span className='prices'>₹ 441 MRP <span className='cut-price'>₹ 630</span>/-</span>
-            </div>
-          </div>
-        </div>
+      
 
       </div>
 
