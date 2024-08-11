@@ -17,6 +17,7 @@ const Navbar = ({ contactUsRef }) => {
   const menuRef = useRef(null);
 
   const toggleShop = () => {
+    setIsMenuOpen(false);
     setIsShopOpen(!isShopOpen);
   };
 
@@ -59,10 +60,11 @@ const Navbar = ({ contactUsRef }) => {
   };
 
   const scrollToContactUs = () => {
+    setIsMenuOpen(false);
     if (contactUsRef.current) {
       contactUsRef.current.scrollIntoView({ behavior: 'smooth' });
     }
-    setIsMenuOpen(false); // Close the menu after scrolling
+     // Close the menu after scrolling
   };
 
   return (
@@ -82,6 +84,7 @@ const Navbar = ({ contactUsRef }) => {
             <li><a href="#" onClick={toggleShop}>Shop</a></li>
             <li><a href="#" onClick={() => navigateTo('/corporategifts')}>Corporate Gifts</a></li>
             <li><a href="#" onClick={() => navigateTo('contact')}>Contact Us</a></li>
+            <li><a href="#" onClick={() => navigateTo('/')}>Home</a></li>
           </ul>
         </div>
         <div className="logo-text-group" onClick={() => navigateTo('/')}>

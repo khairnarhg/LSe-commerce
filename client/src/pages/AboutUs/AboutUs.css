@@ -17,9 +17,7 @@
 
 .big-aboutus-heading-group{
     position: relative;
-    /* margin-top: 5rem; */
     margin-bottom: 1rem;
-    /* background-color: red;  */
     display: flex;
     justify-content: center;
     align-items:center;
@@ -47,7 +45,6 @@
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    /* background-color: red; */
     gap: 4vh;
 }
 
@@ -69,4 +66,83 @@
 
 .baboutusfooter{
     width: 4rem;
+}
+
+@media only screen and (max-width: 768px){
+
+    .aboutus-main-container{
+        width: 100vw;
+        height: 50%;
+        background-image: none;
+    }
+    
+    .big-aboutus-container{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        margin-top: 5rem;
+
+    }
+    
+    .big-aboutus-heading-group{
+        position: relative;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        font-family: 'Gowun Batang', serif;
+        color: black;
+        gap: 4vw;
+       
+    }
+    
+    .baboutusheader{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    .baboutusline1,
+    .baboutusline2,
+    .baboutusline3,
+    .baboutusline4{
+        height: 3px;
+        width: 30vw;
+        background-color: black;
+        border-radius: 20px;
+    }
+    .image-area1{
+        position: relative;     
+        gap: 4vh;
+    }
+
+    .imgg2,
+    .imgg1{
+        height:50%;
+        width: 90%;
+        object-fit: cover;
+    }
+
+    
+    .big-aboutus-footer-group{
+        position: relative;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        color: black;
+        gap: 4vw;
+    }
+
+    .baboutusfooter img{
+        width: 40px;
+    }
+    
+    .baboutusfooter{
+        width: 4rem;
+    }
+    
+
 }

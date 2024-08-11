@@ -14,8 +14,9 @@ import Accessories from './pages/FullShop/Accessories/Accessories.jsx';
 import TravelBags from './pages/FullShop/TravelBags/TravelBags.jsx';
 import Apparels from './pages/FullShop/Apparels/Apparels.jsx';
 import Giftwares from './pages/FullShop/Giftwares/Giftwares.jsx';
-import Product from './pages/Product/Product.jsx';
+import ProductDescription from './pages/ProductDescription/ProductDescription.jsx';
 import Cart from './pages/Cart/Cart.jsx';
+import WpLink from './pages/WpLink/WpLink.jsx';
 import { AuthProvider } from './utils/AuthContext.js'
 
 function App() {
@@ -38,7 +39,8 @@ function App() {
           <Route path="/travelbags" element={<TravelBags/>}/>
           <Route path="/apparels" element={<Apparels/>}/>
           <Route path="/giftwares" element={<Giftwares/>}/>
-          <Route path="/products" element={<Product/>}/>
+          <Route path="/products/:id" element={<ProductDescription />} />
+          <Route path="/buynow" element={<WpLink/>}/>
           {/* <Route path="/cart" element={<Cart/>}/> */}
         </Routes>
 

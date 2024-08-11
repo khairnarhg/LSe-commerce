@@ -1,13 +1,31 @@
 import React, {useEffect, useRef, useState} from 'react';
 import './NewArrivals.css';
+import { useNavigate } from 'react-router-dom';
 const NewArrivals = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const touchStartX = useRef(0);
+    const navigate = useNavigate();
 
 
-    const products = [ { image: "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688072/purse_3_red_dgxvlm.webp", name: 'Bucket Bag', a_price: '5505', d_price: '3854' }, 
-        { image: "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688071/purse_blue3_akhujd.webp", name: 'Eco Shiny Tote' , a_price: '2640', d_price: '1848' }, 
-        { image: "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709042/WhatsApp_Image_2024-08-03_at_23.38.03_srgdet.webp", name: 'Yoshi 2' , a_price: '3480', d_price: '2436' }, ];
+    const products = [ { image: "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688072/purse_3_red_dgxvlm.webp", name: 'Bucket Bag', a_price: '5505', d_price: '3854', id:'SL186', cat:"Women's Bag" }, 
+        { image: "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688071/purse_blue3_akhujd.webp", name: 'Eco Shiny Tote' , a_price: '2640', d_price: '1848' , id:'SL164', cat:"Women's Bag"}, 
+        { image: "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709042/WhatsApp_Image_2024-08-03_at_23.38.03_srgdet.webp", name: 'Yoshi 2' , a_price: '3480', d_price: '2436', id:'SL165', cat:"Women's Bag" }, ];
+
+        const handleProductClick = (productId) => {
+          // Find the product with the given productId
+          const selectedProduct = products.find(product => product.id === productId);
+        
+          // Check if the product exists
+          if (selectedProduct) {
+            // Navigate to the product page with the category of the selected product
+            navigate(`/products/${productId}`, {
+              state: { category: selectedProduct.cat }
+            });
+          } else {
+            // Handle the case where the productId is not found (optional)
+            console.error('Product not found');
+          }
+        };
 
 
 
@@ -53,9 +71,9 @@ const NewArrivals = () => {
           onTouchEnd={handleTouchEnd}
         >
           {products.map((product, index) => (
-            <div key={index} className='carousel-item'>
+            <div key={index} className='carousel-item' onClick={() => handleProductClick(`${product.id}`)}>
               
-              <img src={product.image} alt={product.name} className='product-photo1' />
+              <img src={product.image} alt={product.name} className='product-photo1' onClick={() => handleProductClick(`${product.id}`)}/>
               <div className='product-title1'>
                 <div className='product-name'>{product.name}</div>
                 <span>₹ {product.d_price} MRP <span className='cut-price'>₹{product.a_price}</span>/-</span>
@@ -72,4 +90,4 @@ const NewArrivals = () => {
   )
 }
 
-export default NewArrivals
+export default NewArrivals;

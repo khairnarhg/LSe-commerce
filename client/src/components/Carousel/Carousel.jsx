@@ -18,7 +18,7 @@ const Carousel = () => {
     let timeOut = null;
 
     const car = [ { image: bg2 }, { image: bg3 }, { image: bg4 }, { image: bg5 }];
-    const car1 = [ { image: bg22 }, { image: bg33 }, { image: bg44 }, { image: bg55 }];
+    const car1 = [ { image: bg11 }, { image: bg22 }, { image: bg33 }, { image: bg44 }, { image: bg55 }];
 
     useEffect(() => {
         const handleResize = () => {

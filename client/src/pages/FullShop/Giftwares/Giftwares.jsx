@@ -1,14 +1,23 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Giftwares.css';
 import GFimg from '../../../assets/Images/giftwarescat.webp';
 import Navbar from '../../../components/Navbar/Navbar.jsx';
 import ContactUs from '../../../components/ContactUs/ContactUs.jsx';
 
 const Giftwares = () => {
+  const contactUsRef = useRef(null);
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleProductClick = (productId) => {
+    navigate(`/products/${productId}`, {
+      state: { category: 'Giftware' }
+    });
+  };
   return (
     <div className='gf-container'>
-      <Navbar/>
+      <Navbar contactUsRef={contactUsRef}/>
       <div className="gf-main-container">
       <div className="a-header">
        GIFTWARES
@@ -24,14 +33,14 @@ const Giftwares = () => {
       </div>
       <div className="product-area">
         <div className="a-div1">
-          <div className='product'>
+          <div className='product' onClick={() => handleProductClick('SL116')}>
             <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688061/SL116_6_dlp0s4.webp" alt="" className='product-img'/>
             <div className='product-title'>
                   <div className='product-name'>Pen Stand</div>
                   <span className='prices'>₹ 914 MRP <span className='cut-price'>₹ 1305</span>/-</span>
             </div>
           </div>
-          <div className='product'>
+          <div className='product'onClick={() => handleProductClick('SL144')}>
             <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688064/SL144_n453ef.webp" alt="" className='product-img'/>
             <div className='product-title'>
                   <div className='product-name'>Jewelery Box</div>
@@ -40,7 +49,7 @@ const Giftwares = () => {
           </div>
         </div>
         <div className="a-div1">
-        <div className='product'>
+        <div className='product'onClick={() => handleProductClick('SL176')}>
             <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688062/SL176_4_ox5wep.webp" alt="" className='product-img'/>
             <div className='product-title'>
                   <div className='product-name'>Watch Box</div>
@@ -52,7 +61,9 @@ const Giftwares = () => {
 
       </div>
       </div>
-      <ContactUs/>
+      <div ref={contactUsRef}>
+        <ContactUs />
+      </div>
     </div>
   )
 }

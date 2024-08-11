@@ -1,17 +1,35 @@
 import React, {useEffect, useRef, useState} from 'react';
 import './BestSellers.css';
+import { useNavigate } from 'react-router-dom';
 
 const BestSellers = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const touchStartX = useRef(0);
 
+    const navigate = useNavigate();
 
-        const products = [ { image: "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688069/laptoptan_2_t8d7or.webp", name: 'Sleek Laptop Bag', a_price: '3900', d_price: '2730' }, 
-        { image: "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688056/handbag_3_hhhptv.webp", name: 'Oliva' , a_price: '2250', d_price: '1575' }, 
-        { image: "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688054/SL105_atas6i.webp", name: 'Square Ladies Laptop Bag' , a_price: '5580', d_price: '3906' }, 
-        { image: "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709006/WhatsApp_Image_2024-08-03_at_23.38.00_dauzrh.webp", name: 'Sling With Chain' , a_price: '2625', d_price: '1838'  },
-        { image: "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688055/sideblue_4_ivt8cg.webp", name: 'Cross Body Sling' , a_price: '2550', d_price: '1785' }];
+    const products = [ { image: "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688069/laptoptan_2_t8d7or.webp", name: 'Sleek Laptop Bag', a_price: '3900', d_price: '2730', id:'SL111', cat:"Men's Bag" }, 
+      { image: "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688056/handbag_3_hhhptv.webp", name: 'Oliva' , a_price: '2250', d_price: '1575', id:'SL141', cat:"Women's Bag"}, 
+      { image: "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688054/SL105_atas6i.webp", name: 'Square Ladies Laptop Bag' , a_price: '5580', d_price: '3906' , id:'SL163', cat:"Women's Bag"}, 
+      { image: "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709006/WhatsApp_Image_2024-08-03_at_23.38.00_dauzrh.webp", name: 'Sling With Chain' , a_price: '2625', d_price: '1838', id:'SL140', cat:"Women's Bag"  },
+      { image: "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688055/sideblue_4_ivt8cg.webp", name: 'Cross Body Sling' , a_price: '2550', d_price: '1785', id:'SL162', cat:"Women's Bag" }];
 
+      const handleProductClick = (productId) => {
+        // Find the product with the given productId
+        const selectedProduct = products.find(product => product.id === productId);
+      
+        // Check if the product exists
+        if (selectedProduct) {
+          // Navigate to the product page with the category of the selected product
+          navigate(`/products/${productId}`, {
+            state: { category: selectedProduct.cat }
+          });
+        } else {
+          // Handle the case where the productId is not found (optional)
+          console.error('Product not found');
+        }
+      };
+      
         const nextSlide = () => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % products.length);
           };
@@ -54,11 +72,11 @@ const BestSellers = () => {
           onTouchEnd={handleTouchEnd}
         >
           {products.map((product, index) => (
-            <div key={index} className='carousel-item'>
+            <div key={index} className='carousel-item' onClick={() => handleProductClick(`${product.id}`)}>
               
               <img src={product.image} alt={product.name} className='product-photo' />
               <div className='product-title1'>
-                <div className='product-name'>{product.name}</div>
+                <div className='product-name' >{product.name}</div>
                 <span>₹ {product.d_price} MRP <span className='cut-price'>₹{product.a_price}</span>/-</span>
               </div>
             </div>
