@@ -1,1 +1,2 @@
-/ignores
+# Local Netlify folder
+.netlify

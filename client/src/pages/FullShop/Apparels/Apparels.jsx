@@ -28,7 +28,7 @@ const Apparels = () => {
        "Wear Your Confidence - Luxurious Leather Apparel."
       </div>
       <div className="Discount-line">
-        *30% Discount on all the products
+        *<span className='b-disc'>30%</span> Discount on all the products
       </div>
       <div className="product-area">
         <div className="a-div1">
@@ -36,7 +36,8 @@ const Apparels = () => {
             <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688064/Womenjacketfront_nlcgpy.webp" alt="" className='product-img'/>
             <div className='product-title'>
                   <div className='product-name'>Women's Jacket</div>
-                  <span className='prices'>₹ 4900 MRP <span className='cut-price'>₹ 7000</span>/-</span>
+                  'Flat 30% OFF'
+                  <div className='prices'>₹ 4900 MRP <span className='cut-price'>₹ 7000</span>/-</div>
             </div>
           </div>
         </div>

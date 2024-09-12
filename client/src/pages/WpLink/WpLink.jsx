@@ -26,7 +26,7 @@ const WpLink = () => {
             <div className="wplink-intr2">
             "Click ‘Buy Now!’ and Send Us Your Product Choice via WhatsApp for a Seamless Shopping Experience!"
             </div>
-            <div></div> Whatsapp No.: +91 998-789-8988
+            <div></div> Whatsapp No.: +91 99 87 89 89 88
             <button
             className='whatsapp-button'
             onClick={() => window.open(whatsappUrl, '_blank')}

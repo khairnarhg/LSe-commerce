@@ -62,7 +62,7 @@
         "SL156": {
           "pid": "SL156",
           "pname": "Imp Belt",
-          "Dimesnion": "Size 32",
+          "Dimension": "Size 32",
           "Description": "details",
 
           "Price": "Rs 1125/-",
@@ -75,7 +75,7 @@
         "MBPRMD": {
           "pid": "MBPRMD",
           "pname": "Belt",
-          "Size": "32",
+          "Dimension": "32",
           "Description": "Details",
 
           "Image": {
@@ -118,7 +118,7 @@
         "SUP815": {
           "pid": "SUP815",
           "pname": "Wallet",
-          "Dimesnsion": "4.2*0.5*3.5",
+          "Dimension": "4.2*0.5*3.5",
           "Description": "details",
 
           "Color": "available",
@@ -185,7 +185,7 @@
         "SL233": {
           "pid": "SL233",
           "pname": "Women Jacket",
-          "Size": "36",
+          "Dimension": "36",
           "Description": "detail",
 
           "Color": "Red",
@@ -286,7 +286,7 @@
         "SL186": {
           "pid": "SL186",
           "pname": "Bucket Bag",
-          "Dimesion": "12.5*5*9.5",
+          "Dimension": "12.5*5*9.5",
           "Description": "Full grain natural leather Top Handle Satchel Handbag & Shoulder sling bags for Office wear.. Closure Type : Zipper, Material : Leather, Style : Shoulder Sling & Handbag , Occasion Type : Business & Casual",
 
           "Image": {
@@ -336,7 +336,7 @@
         "SL147": {
           "pid": "SL147",
           "pname": "Women's Clutch",
-          "Dimesnion": "8.2*2.5*4.3",
+          "Dimension": "8.2*2.5*4.3",
           "Description": "Classy Women's two fold wallet with separte mobile compartment",
 
           "Color": "available",
@@ -371,7 +371,7 @@
         "SL162": {
           "pid": "SL162",
           "pname": "Cross Body Sling",
-          "Dimesnion": "7*1.5*8.5",
+          "Dimension": "7*1.5*8.5",
           "Description": "Classic Unisex Sling Bag. Perfect for Travel/Vacation",
 
           "Color": "Available",
@@ -502,7 +502,7 @@
         "SL165": {
           "Color": "",
           "Description": "Elegant party wear handbag with additional shoulder sling.",
-          "Dimension": "",
+          "Dimension": "12.5X8.5X1.5",
           "Discount_p": "₹ 2436",
           "Image": {
             "main": ["https://res.cloudinary.com/dyyocxffd/image/upload/v1722709042/WhatsApp_Image_2024-08-03_at_23.38.03_srgdet.webp",
@@ -514,8 +514,8 @@
           "pid": "SL165",
           "pname": "Yoshi 2"
         },
-        "SL140": {
-          "pid": "SL140",
+        "SL192": {
+          "pid": "SL192",
           "pname": "Sling with Chain",
           "Dimension": "",
           "Description": "Classy Women/ Girls stylish sling purse. Perfect for Vacation,Parties or shopping.",
@@ -535,11 +535,29 @@
 
           "Color": "",
           "Image": {
-            "main": ["https://res.cloudinary.com/dyyocxffd/image/upload/v1722688058/handbag_4_gtfc17.webp",
-             "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688058/handbag_1_juxgr9.webp"]
+            "main": ["https://res.cloudinary.com/dyyocxffd/image/upload/v1723200956/IMG_5933_f5tz4o.webp",
+                    "https://res.cloudinary.com/dyyocxffd/image/upload/v1723200956/IMG_5932_rrrd08.webp",
+                   "https://res.cloudinary.com/dyyocxffd/image/upload/v1723200956/IMG_5932_rrrd08.webp",
+                   "https://res.cloudinary.com/dyyocxffd/image/upload/v1723200956/IMG_5928_ejfn4z.webp",
+                   "https://res.cloudinary.com/dyyocxffd/image/upload/v1723200956/IMG_5927_suvxvc.webp",
+                  "https://res.cloudinary.com/dyyocxffd/image/upload/v1723200956/IMG_5929_wycd3h.webp"]
           },
           "Price": "Rs 2250/-",
           "Discount_p": "₹ 1575"
+        },
+        "SL140": {
+          "pid": "SL140",
+          "pname": "Ladies Sling Stan BSL",
+          "Dimension": "7*3.9*7.5",
+          "Description": "Full grain natural leather Top Handle Satchel Handbag & Shoulder sling bag.. Closure Type : Zipper, Material : Leather, Style : Shoulder Sling & Handbag , Occasion Type : Casual",
+
+          "Color": "",
+          "Image": {
+            "main": ["https://res.cloudinary.com/dyyocxffd/image/upload/v1722688058/handbag_4_gtfc17.webp",
+            "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688058/handbag_1_juxgr9.webp"]
+          },
+          "Price": "Rs 2625/-",
+          "Discount_p": "₹ 1838"
         }
       }
     }

@@ -14,7 +14,7 @@ function ContactUs() {
       <div className="contact-info">
         <div className="contact-details">
           <div className='contact-details-content'>Email: leatherandstyle71@gmail.com</div>
-          <div className='contact-details-content'>Mob: 9967 29 63 85 / 9987 89 89 88</div>
+          <div className='contact-details-content'>Mob: +91 99 67 29 63 85 / +91 99 87 89 89 88</div>
           <div className='contact-details-content'>Address: Shop No. 69, Amrapali Shopping Arcade, Opp. Jasmine Tower, Near Vasant Vihar School, Vasant Vihar, Thane West, Pin 400610</div>
           <div className='contact-details-content'>*Click on the map to get the directions</div>
         </div>
