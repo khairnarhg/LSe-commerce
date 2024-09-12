@@ -29,7 +29,7 @@ const TravelBags = () => {
           "Travel in Style - Your Journey Deserves the Best."
         </div>
         <div className="Discount-line">
-          *30% Discount on all the products
+          *<span className='b-disc'>30%</span> Discount on all the products
         </div>
         <div className="product-area">
           <div className="a-div1">
@@ -37,14 +37,16 @@ const TravelBags = () => {
               <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688065/laptop_3_rdsvkf.webp" alt="" className='product-img'/>
               <div className='product-title'>
                 <div className='product-name'>Over Nighter</div>
-                <span className='prices'>₹ 4725 MRP <span className='cut-price'>₹ 6750</span>/-</span>
+                'Flat 30% OFF'
+                <div className='prices'>₹ 4725 MRP <span className='cut-price'>₹ 6750</span>/-</div>
               </div>
             </div>
             <div className='product' onClick={() => handleProductClick('SL149')}>
               <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688067/trolly_2_fwjbaw.webp" alt="" className='product-img'/>
               <div className='product-title'>
                 <div className='product-name'>Laptop Trolley</div>
-                <span className='prices'>₹ 9870 MRP <span className='cut-price'>₹ 14100</span>/-</span>
+                'Flat 30% OFF'
+                <div className='prices'>₹ 9870 MRP <span className='cut-price'>₹ 14100</span>/-</div>
               </div>
             </div>
           </div>
@@ -53,7 +55,8 @@ const TravelBags = () => {
               <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688066/luggage_2_dggdrq.webp" alt="" className='product-img'/>
               <div className='product-title'>
                 <div className='product-name'>Shoe Duffel</div>
-                <span className='prices'>₹ 4725 MRP <span className='cut-price'>₹ 6750</span>/-</span>
+                'Flat 30% OFF'
+                <div className='prices'>₹ 4725 MRP <span className='cut-price'>₹ 6750</span>/-</div>
               </div>
             </div>
           </div>

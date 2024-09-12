@@ -29,7 +29,7 @@ const Giftwares = () => {
       "Give the Gift of Luxury - Thoughtful Leather Treasures."
       </div>
       <div className="Discount-line">
-        *30% Discount on all the products
+        *<span className='b-disc'>30%</span> Discount on all the products
       </div>
       <div className="product-area">
         <div className="a-div1">
@@ -37,14 +37,16 @@ const Giftwares = () => {
             <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688061/SL116_6_dlp0s4.webp" alt="" className='product-img'/>
             <div className='product-title'>
                   <div className='product-name'>Pen Stand</div>
-                  <span className='prices'>₹ 914 MRP <span className='cut-price'>₹ 1305</span>/-</span>
+                  'Flat 30% OFF'
+                  <div className='prices'>₹ 914 MRP <span className='cut-price'>₹ 1305</span>/-</div>
             </div>
           </div>
           <div className='product'onClick={() => handleProductClick('SL144')}>
             <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688064/SL144_n453ef.webp" alt="" className='product-img'/>
             <div className='product-title'>
                   <div className='product-name'>Jewelery Box</div>
-                  <span className='prices'>₹ 4515 MRP <span className='cut-price'>₹ 6450</span>/-</span>
+                  'Flat 30% OFF'
+                  <div className='prices'>₹ 4515 MRP <span className='cut-price'>₹ 6450</span>/-</div>
             </div>
           </div>
         </div>
@@ -53,7 +55,8 @@ const Giftwares = () => {
             <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688062/SL176_4_ox5wep.webp" alt="" className='product-img'/>
             <div className='product-title'>
                   <div className='product-name'>Watch Box</div>
-                  <span className='prices'>₹ 1313 MRP <span className='cut-price'>₹ 1875</span>/-</span>
+                  'Flat 30% OFF'
+                  <div className='prices'>₹ 1313 MRP <span className='cut-price'>₹ 1875</span>/-</div>
             </div>
           </div>
          

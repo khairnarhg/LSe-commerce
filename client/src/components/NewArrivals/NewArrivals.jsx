@@ -59,8 +59,9 @@ const NewArrivals = () => {
             <div className="line22"></div>
         </div>
         <div className='blur-bg' >
-        <div className='discount'>*30% off on all products</div>
+        <div className='discount'>*<span className='b-disc'>30%</span> off on all products</div>
         <div className='instr'>Swipe to see the products</div>
+        <button className='carousel-button-prev' onClick={prevSlide}>&#10094;</button>
             <div className='carousel-container-2'>
             {/* <button className='carousel-button prev' onClick={prevSlide}>&#10094;</button> */}
             <div className="carousel-wrapper2">
@@ -83,6 +84,7 @@ const NewArrivals = () => {
         </div>
         </div>    
         </div>
+        <button className='carousel-button-next' onClick={nextSlide}>&#10095;</button>
 
         </div>
       

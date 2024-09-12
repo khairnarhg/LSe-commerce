@@ -48,7 +48,7 @@ const ReviewsHome = () => {
             <div className="review">Awesome collection of good quality premium Travel bags and laptop bags.</div>
           </div>
           </div>
-          <div className="rp-3">
+          {/* <div className="rp-3">
           <div className="review-detail">
             <div className="person-name">Mr. Shailendra Ghatge</div>
             <div className="star-rating">
@@ -56,7 +56,7 @@ const ReviewsHome = () => {
             </div>
             <div className="review">Stylish collection of leather jackets, looks elegant and high quality.</div>
           </div>
-          </div>
+          </div> */}
           
         </div>
       </div>

@@ -12,6 +12,7 @@ import { useNavigate } from 'react-router-dom';
 const ShopByCategory = () => {
     const navigate= useNavigate();
     const navigateTo=(path)=>{
+        window.scrollTo({ top: 0});
         navigate(path);
     }
   return (

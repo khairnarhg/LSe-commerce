@@ -1,0 +1,541 @@
+{
+    "Category": {
+      "Travel": {
+        "SL181": {
+          "Color": "available",
+          "Description": "Genuine Leather 19litres laptop bag for men for official/messenger purpose Closure Type : Zipper, Material : Leather, Style : Overnighter / Laptop Bag with Shoulder Strap, Occasion Type : Business  ",
+          "Dimension": "17*12*4.5",
+          "Discount_p": "₹ 4725",
+          "Image": {
+            "main": ["https://res.cloudinary.com/dyyocxffd/image/upload/v1722688065/laptop_3_rdsvkf.webp",
+             "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688069/laptoptan_1_qvqoxq.webp",
+             "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688069/laptop_tan_6_e5pcrs.webp",
+             "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688068/laptop_tan_2_shorxw.webp",
+             "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688068/laptop_tan_4_bjivej.webp",
+             "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688065/laptopbag_ho1eyn.webp",
+             "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688065/laptopbag_2_flxsrt.webp"]
+          },
+          "Instruction": "care",
+          "Price": "₹ 6750",
+          "pid": "SL181",
+          "pname": "Over Nighter"
+        },
+        "SL149": {
+          "pid": "SL149",
+          "pname": "Laptop Trolly",
+          "Dimension": "17*9.7*15",
+          "Description": "Small Cabin Trolley Bag with 4 wheels. Suitable for your Business Trips. Padded Cusion compartment for your laptop saftey purpose.",
+          "Instruction": "care",
+          "Color": "available",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688067/trolly_2_fwjbaw.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688067/trolly5_pfvk0e.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688067/trolly4_wvwnoa.webp",
+            "view2": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688067/trolly_xcs1vw.webp",
+            "view3": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688067/trolly3_wgcqqw.webp"
+          },
+          "Price": "Rs 14100/-",
+          "Discount": "if any"
+        },
+        "SL153": {
+          "pid": "SL153",
+          "pname": "Shoe Duffel",
+          "Dimension": "20.5*10.5*10",
+          "Description": "Leather Duffle Bag for multi purpose use. Perfect for Gym or Travel. Separate Compartment for Shoe.",
+          "Instruction": "care",
+          "Color": "available",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688066/luggage_2_dggdrq.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688065/luggage_3_p2rypb.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688065/luggage_4_t0ckww.webp",
+            "view2": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688065/luggage_5_y3vpou.webp",
+            "view3": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688065/luggage_1_geydki.webp"
+          },
+          "Price": "Rs 6750/-",
+          "Discount": "if any"
+        }
+      },
+      "Accessories": {
+        "SL156": {
+          "pid": "SL156",
+          "pname": "Imp Belt",
+          "Dimesnion": "",
+          "Description": "details",
+          "Instruction": "care",
+          "Price": "Rs 1125/-",
+          "Discount": "if any",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688064/IMPBELT_qfn8ns.webp"
+          }
+        },
+        "MBPRMD": {
+          "pid": "MBPRMD",
+          "pname": "Belt",
+          "Size": "32",
+          "Description": "Details",
+          "Instruction": "Care",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688064/IMPBELT2_zvaeuj.webp"
+          },
+          "Price": "Rs 890/-",
+          "Discount": "if any"
+        },
+        "SL175": {
+          "pid": "SL175",
+          "pname": "Wallet",
+          "Dimension": "4.2*0.5*3.5",
+          "Description": "detail",
+          "Instruction": "care",
+          "Color": "available",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688061/walletBr_mi0ofc.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688060/walletBr_3_aofztd.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688060/walletBl_6_gtg7au.webp",
+            "view2": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688059/walletBl_4_keynig.webp"
+          },
+          "Price": "Rs 825/-",
+          "Disocunt": "if any"
+        },
+        "SUP8061": {
+          "pid": "SUP8061",
+          "pname": "Waleet",
+          "Dimension": "4.2*0.5*3.5",
+          "Description": "Details",
+          "Instruction": "care",
+          "Color": "available",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688061/walletT_yc5avt.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688060/walletT_3_wkgsp0.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688059/wallet_T2_cj00wv.webp"
+          },
+          "Price": "Rs 750/-",
+          "Discount": "if any"
+        },
+        "SUP815": {
+          "pid": "SUP815",
+          "pname": "Wallet",
+          "Dimesnsion": "4.2*0.5*3.5",
+          "Description": "details",
+          "Instruction": "care",
+          "Color": "available",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688061/wallet_vdjvef.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688059/walletBl_2_axgawv.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688061/wallet_1_qrmiec.webp"
+          },
+          "Price": "Rs 630/-",
+          "Discount": "if any"
+        }
+      },
+      "Giftware": {
+        "SL116": {
+          "pid": "SL116",
+          "pname": "Pen Stand",
+          "Dimension": "3.1*3.2*4",
+          "Description": "details",
+          "Instruction": "care",
+          "Color": "available",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688061/SL116_6_dlp0s4.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688063/SL116_3_y6jkyv.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688061/SL116_4_norwug.webp",
+            "view2": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688062/SL116_1_b6zlx7.webp"
+          },
+          "Price": "Rs 1305/-",
+          "Discount": "if any"
+        },
+        "SL144": {
+          "pid": "SL144",
+          "pname": "Jewelery Box",
+          "Dimension": "12*7*4.5",
+          "Description": "details",
+          "Instruction": "care",
+          "Color": "available",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688064/SL144_n453ef.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688064/SL144_7_lrjbrn.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688064/SL144_3_pdxqda.webp"
+          },
+          "Price": "Rs 6450/-",
+          "Discount": "if any"
+        },
+        "SL176": {
+          "pid": "SL176",
+          "pname": "Watch Box",
+          "Dimension": "5.5*3.7*3.2",
+          "Description": "details",
+          "Instruction": "care",
+          "Color": "available",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688062/SL176_4_ox5wep.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688062/SL175_hzsyjd.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688063/SL176_2_zo8xrz.webp",
+            "view2": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688063/SL176_3_ihntyu.webp",
+            "view3": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688063/SL176_1_kateah.webp"
+          },
+          "Price": "Rs 1875/-",
+          "Discount": "if any"
+        }
+      },
+      "Jacket": {
+        "SL233": {
+          "pid": "SL233",
+          "pname": "Women Jacket",
+          "Size": "36",
+          "Description": "detail",
+          "Instruction": "care",
+          "Color": "Red",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688064/Womenjacketfront_nlcgpy.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688064/Womenjacketback_q0rsph.webp"
+          },
+          "Price": "Rs 7000/-",
+          "Discount": "if any"
+        }
+      },
+      "Men's Bag": {
+        "SL109": {
+          "pid": "SL109",
+          "pname": "Back Pack",
+          "Dimension": "13*7*16.2",
+          "Description": "Unisex Backpack with ample space to carry all you need for work and travel. This backpack is designed with zip pocket and a zip closure with soft cusion compartment to carry laptop",
+          "Instruction": "care",
+          "Color": "Available",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688070/bag_f1eqaj.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688070/bag_g_1_nlybyn.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688070/bag_g_2_cglfqv.webp",
+            "view2": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688070/bag_g_vnafse.webp"
+          },
+          "Price": "Rs 5550/-",
+          "Discount": "if any"
+        },
+        "SL111": {
+          "pid": "SL111",
+          "pname": "Sleek Laptop Bag",
+          "Dimension": "10.5*15.7*3.5",
+          "Description": "Genuine Leather Laptop Messanger bag for Men for Office/Business purpose",
+          "Instruction": "care",
+          "Color": "Available",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688069/laptoptan_2_t8d7or.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688069/laptoptan_3_aoyip8.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688068/laptoptan_dvqh9n.webp"
+          },
+          "Price": "Rs 3900/-",
+          "Discont": "if any"
+        },
+        "SL152": {
+          "pid": "SL152",
+          "pname": "5 in 1 bag",
+          "Dimension": "15*12.5*5.5",
+          "Description": "Unisex Textured genuine leather backpack : It has a flap across the mouth with zip pocket on the top, secured with dual buckle closures. A handle on top, two adjustable shoulder straps two main zip compartments, one with a zip pockets on the back.",
+          "Instruction": "care",
+          "Image": {
+            "Main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688068/2n1bag_2_ghpxsr.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688068/2n1bag_tadqnt.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688069/2n1bag_3_qwub1i.webp",
+            "view2": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688069/2n1bag_7_ygttpt.webp",
+            "view3": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688069/2n1bag_6_v4zqtv.webp",
+            "view4": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688070/2n1bag_8_ohyoza.webp"
+          },
+          "Price": "Rs 6750/-",
+          "Discount": "if any"
+        },
+        "SUP187": {
+          "pid": "SUP187",
+          "pname": "Messenger",
+          "Dimension": "12.2*4.2*13",
+          "Description": "Carry your essential with this multi purpose messanger unisex bag. Made from genuine leather. A must have for men who appreciate high quality accessories for day to day use.",
+          "Instuction": "care",
+          "Color": "Available",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688059/sidebagblack_ewkil6.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688058/sidebag_6_jvts13.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688065/sidebag_4_tgtnib.webp",
+            "view2": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688065/sidebag_2_yzx6sg.webp",
+            "view3": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688060/sidebag_5_oedzqp.webp"
+          },
+          "Price": "Rs 5010/-",
+          "Discount": "if any"
+        }
+      },
+      "Women's Bag": {
+        "SL108": {
+          "pid": "SL108",
+          "pname": "Handle Bag",
+          "Dimension": "13*5*9.5",
+          "Description": "Full grain natural leather Top Handle Satchel Handbag & Shoulder sling bags for Office wear.. Closure Type : Zipper, Material : Leather, Style : Shoulder Sling & Handbag , Occasion Type : Business & Casual",
+          "Instruction": "care",
+          "Color": "colors",
+          "Image": {
+            "Main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688072/purse_blue_1_pzqbdc.webp",
+            "views": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688053/SL186_jhyvvd.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688053/SL186_3_sjoksu.webp",
+            "view2": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688052/SL186_1_gxvdqb.webp",
+            "view3": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688052/SL186_2_dibbfe.webp"
+          },
+          "Price": "4350",
+          "Discount": "if any"
+        },
+        "SL186": {
+          "pid": "SL186",
+          "pname": "Bucket Bag",
+          "Dimesion": "12.5*5*9.5",
+          "Description": "Full grain natural leather Top Handle Satchel Handbag & Shoulder sling bags for Office wear.. Closure Type : Zipper, Material : Leather, Style : Shoulder Sling & Handbag , Occasion Type : Business & Casual",
+          "Instruction": "care",
+          "Image": {
+            "Main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688072/purse_3_red_dgxvlm.webp",
+            "Views": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688071/purse_red_2_nampkj.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688071/purse_red_udukrm.webp",
+            "view2": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688056/ladiesred_bhjcjr.webp"
+          },
+          "Price": "Rs 5505/-",
+          "Discount": "if any",
+          "Color": "availble"
+        },
+        "SL164": {
+          "pid": "SL164",
+          "pname": "Eco Shiny Tote",
+          "Dimension": "14*5.4*12.2",
+          "Description": "A perfect tote for your casual outing with ample of space with zipping closure.",
+          "Instruction": "care",
+          "Color": "available",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688071/purse_blue3_akhujd.webp",
+            "Views": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688071/purse_blue2_t1kvgh.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688071/purse_blue_llk3ws.webp",
+            "view2": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688055/SL108_iyykdx.webp",
+            "view3": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688055/SL108_1_qe2jhi.webp"
+          },
+          "Price": "Rs 2640/-",
+          "Discount": "if any"
+        },
+        "SL177": {
+          "pid": "SL177",
+          "pname": "Big Armani Bag",
+          "Dimension": "13.5*3.8*11.5",
+          "Description": "Handcrafted with genuine leather, Perfect tote for Office and casual wear. Also has case for laptop.",
+          "Instruction": "care",
+          "Color": "avaialble",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688071/womenpurse4_p7sba8.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688070/womenpurse2_grg7us.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688070/womenpurse3_akzstj.webp",
+            "view2": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688070/womenpurse_wrjfld.webp",
+            "view3": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688056/ladiesbag_1_dokzwg.webp"
+          },
+          "Price": "Rs 4725/-",
+          "Discount": "if any"
+        },
+        "SL147": {
+          "pid": "SL147",
+          "pname": "Women's Clutch",
+          "Dimesnion": "8.2*2.5*4.3",
+          "Description": "Classy Women's two fold wallet with separte mobile compartment",
+          "Instruction": "care",
+          "Color": "available",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688055/purse_uwzh3s.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688057/SL146_8_i5jhd6.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688058/SL147_6_hxfktn.webp",
+            "view2": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688057/SL147_1_xqgya1.webp",
+            "view3": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688057/SL147_3_gfehwo.webp",
+            "view4": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688058/SL147_5_dllzsx.webp"
+          },
+          "Price": "Rs 2325/-",
+          "Discount": "if any"
+        },
+        "SL101": {
+          "pid": "SL101",
+          "pname": "Side Bag",
+          "Dimension": "8.5*2.5*10.2",
+          "Description": "Classic Unisex Sling Bag. Perfect for Travel/Vacation",
+          "Instruction": "care",
+          "Color": "available",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688059/sidebag_browm_8_fcjirx.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688063/sidebag_brown_3_fr2owd.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688062/sidebag_brown_jk6ha8.webp",
+            "view2": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688062/sidebag_brown_5_fbddzr.webp",
+            "view3": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688062/sidebag_brown_7_bpt5pv.webp"
+          },
+          "Price": "Rs 2450/-",
+          "Discount": "if any"
+        },
+        "SL162": {
+          "pid": "SL162",
+          "pname": "Cross Body Sling",
+          "Dimesnion": "7*1.5*8.5",
+          "Description": "Classic Unisex Sling Bag. Perfect for Travel/Vacation",
+          "Instruction": "care",
+          "Color": "Available",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688055/sideblue_4_ivt8cg.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688055/sideblue_2_wtfsz8.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688055/sideblue_3_lllbsd.webp",
+            "view2": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688055/sideblue_tlsf7u.webp"
+          },
+          "Price": "Rs 2550/-",
+          "Discount": "if any"
+        },
+        "SL105": {
+          "pid": "SL105",
+          "pname": "Triangle Sling Bag",
+          "Dimension": "8.2*2*6.6",
+          "Description": "Women Classic leather Sling bag for every occasion",
+          "Instruction": "care",
+          "Color": "Available",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1723200957/IMG_5939_dok3yn.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1723200956/IMG_5940_kvfvy1.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1723200957/IMG_5934_biueyu.webp",
+            "view2": "https://res.cloudinary.com/dyyocxffd/image/upload/v1723200956/IMG_5935_jdofew.webp",
+            "view3": "https://res.cloudinary.com/dyyocxffd/image/upload/v1723200957/IMG_5938_e0rriu.webp",
+            "view4": "https://res.cloudinary.com/dyyocxffd/image/upload/v1723200957/IMG_5937_izvj6a.webp"
+          },
+          "Price": "Rs 3075/-",
+          "Discount": "if any"
+        },
+        "SL163": {
+          "Color": "available",
+          "Description": "Natural leather Ladies Handbag & Sling Shoulder Tote Bags for women Laptop. Big Size branded stylish pattern.. Closure Type : Zipper, Material : Leather, Style : Shoulder with Sling, Occasion Type : Business & Casual",
+          "Dimension": "15.7*5.6*12",
+          "Discount": "if any",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688054/SL105_atas6i.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688054/SL105_6_vmdyk5.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688052/SL105_3_enu2bz.webp",
+            "view2": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688053/SL105_5_yucfhd.webp",
+            "view3": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688052/SL105_4_dex4as.webp"
+          },
+          "Instruction": "care",
+          "Price": "Rs 5580/-",
+          "pid": "SL163",
+          "pname": "Square Ladies Laptop Bag"
+        },
+        "SL184": {
+          "Color": "available",
+          "Description": "Genuine leather bag for Office or travel purpose.",
+          "Dimension": "14.5*4.5*10",
+          "Dsicount": "if any",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688054/SL177_3_p5h8ev.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688054/SL177_bclblj.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688054/SL177_2_o8kgf5.webp",
+            "view2": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688054/SL177_1_bgb7ob.webp"
+          },
+          "Instruction": "care",
+          "Price": "Rs 5625/-",
+          "pid": "SL184",
+          "pname": "Versatile Women's Bag"
+        },
+        "SL102": {
+          "Color": "",
+          "Description": "Full grain natural leather Top Handle Satchel Handbag & Shoulder sling bags for Office wear.. Closure Type : Zipper, Material : Leather, Style : Shoulder Sling & Handbag , Occasion Type : Business & Casual",
+          "Dimension": "",
+          "Discount": "",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709037/WhatsApp_Image_2024-08-03_at_23.38.00_1_cxnxzj.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709045/WhatsApp_Image_2024-08-03_at_23.38.06_syfmyy.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709013/WhatsApp_Image_2024-08-03_at_23.38.04_p9ok2v.webp",
+            "view2": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709008/WhatsApp_Image_2024-08-03_at_23.38.02_2_efpmgg.webp",
+            "view3": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709040/WhatsApp_Image_2024-08-03_at_23.38.02_1_nl5eep.webp",
+            "view4": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709011/WhatsApp_Image_2024-08-03_at_23.38.02_dxdlwg.webp"
+          },
+          "Instruction": "",
+          "Price": "Rs 5670/-",
+          "pid": "SL102",
+          "pname": "Bedded Habdel"
+        },
+        "SL103": {
+          "pid": "SL103",
+          "pname": "Small Armani Bag",
+          "Dimension": "",
+          "Description": "Small Leather Shoulder Bag. Light weight & definitely yes for casual and office wear.",
+          "Instruction": "care",
+          "Color": "available",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709021/WhatsApp_Image_2024-08-03_at_23.37.55_1_sqdhyf.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709027/WhatsApp_Image_2024-08-03_at_23.37.56_ao2rzh.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709024/WhatsApp_Image_2024-08-03_at_23.37.56_1_xd6tdr.webp",
+            "view2": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709003/WhatsApp_Image_2024-08-03_at_23.37.57_brlkvr.webp",
+            "view3": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709000/WhatsApp_Image_2024-08-03_at_23.37.57_1_s7ei9h.webp"
+          },
+          "Price": "Rs 3450/-",
+          "Discount": "if any"
+        },
+        "SL128": {
+          "Color": "available",
+          "Description": "detail",
+          "Dimension": "",
+          "Discount": "if any",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709048/WhatsApp_Image_2024-08-03_at_23.37.54_okfzbg.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722708999/WhatsApp_Image_2024-08-03_at_23.37.55_wyksxw.webp"
+          },
+          "Instruction": "care",
+          "Price": "Rs 5475/-",
+          "pid": "SL128",
+          "pname": "Round Japan Handbag"
+        },
+        "SL148": {
+          "Color": "",
+          "Description": "Stylish ladies handpurse in genuine leather with Shoulder Strap.",
+          "Dimension": "",
+          "Discount": "",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709029/WhatsApp_Image_2024-08-03_at_23.37.58_cgjeas.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709034/WhatsApp_Image_2024-08-03_at_23.37.59_mtbuen.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709032/WhatsApp_Image_2024-08-03_at_23.37.59_1_kkvor9.webp"
+          },
+          "Instruction": "",
+          "Price": "Rs 5370",
+          "pid": "SL148",
+          "pname": "Hermen's Bag"
+        },
+        "SL165": {
+          "Color": "",
+          "Description": "Elegant party wear handbag with additional shoulder sling.",
+          "Dimension": "",
+          "Discount": "",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709042/WhatsApp_Image_2024-08-03_at_23.38.03_srgdet.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709016/WhatsApp_Image_2024-08-03_at_23.38.06_1_csu2wg.webp",
+            "view1": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709019/WhatsApp_Image_2024-08-03_at_23.38.06_2_zdrxk2.webp"
+          },
+          "Instruction": "",
+          "Price": "Rs 3480/-",
+          "pid": "SL165",
+          "pname": "Yoshi 2"
+        },
+        "SL140": {
+          "pid": "SL140",
+          "pname": "Sling with Chain",
+          "Dimension": "",
+          "Description": "Classy Women/ Girls stylish sling purse. Perfect for Vacation,Parties or shopping.",
+          "Instruction": "",
+          "Color": "",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722709006/WhatsApp_Image_2024-08-03_at_23.38.00_dauzrh.webp"
+          },
+          "Price": "Rs 2625/-",
+          "Dsicount": ""
+        },
+        "SL141": {
+          "pid": "SL141",
+          "pname": "Oliva",
+          "Dimension": "8*4.2*4.7",
+          "Description": "",
+          "Instruction": "",
+          "Color": "",
+          "Image": {
+            "main": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688058/handbag_4_gtfc17.webp",
+            "view": "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688058/handbag_1_juxgr9.webp"
+          },
+          "Price": "Rs 2250/-",
+          "Dsicount": "if any"
+        }
+      }
+    }
+  }

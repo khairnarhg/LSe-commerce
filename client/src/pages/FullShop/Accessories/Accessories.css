@@ -31,6 +31,8 @@
 }
 
 .tagline{
+    font-family: "Dancing Script", cursive;
+    letter-spacing: 1px;
     margin-top: 2vh;
     width: 80%;
     font-size: 1.2rem;
@@ -75,9 +77,8 @@
 }
 
 .Discount-line{
-    width: 60%;
     padding: 1rem;
-    background-color: red;
+    background-color: rgb(50, 0,1, 0.9);
     color: white;
     margin-top: 2vh;
     border-radius: 20px;
