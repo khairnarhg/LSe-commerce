@@ -8,12 +8,12 @@ const serverless = require('serverless-http');
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://leatherandstyle.com/',
     credentials: true
 }));
 app.use(bodyParser.json());
 
-const url = 'mongodb+srv://hgkhairnar255:Ngu051MeipNLysla@cluster0.541wpl6.mongodb.net/Leather&Style?retryWrites=true&w=majority&appName=Cluster0';
+const url = 'mongodb+srv://hgkhairnar255:Ngu051MeipNLysla@cluster0.541wpl6.mongodb.net/Leather%26Style?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(async () => {

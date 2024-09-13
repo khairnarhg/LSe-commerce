@@ -87,7 +87,7 @@
       
         "SL175": {
           "pid": "SL175",
-          "pname": "Wallet",
+          "pname": "Sovereign Wallet",
           "Dimension": "4.2*0.5*3.5",
           "Description": "detail",
 
@@ -103,7 +103,7 @@
       
         "SUP8061": {
           "pid": "SUP8061",
-          "pname": "Waleet",
+          "pname": "Luxor Wallet",
           "Dimension": "4.2*0.5*3.5",
           "Description": "Details",
 
@@ -117,7 +117,7 @@
         },
         "SUP815": {
           "pid": "SUP815",
-          "pname": "Wallet",
+          "pname": "Imperial Wallet",
           "Dimension": "4.2*0.5*3.5",
           "Description": "details",
 

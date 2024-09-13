@@ -73,7 +73,7 @@ const [errors, setErrors] = useState({});
 
     if (validateForm()) {
       try {
-        const response = await axios.post('http://localhost:8888/.netlify/functions/corporate-gifts', formData);
+        const response = await axios.post('https://main--lsewarehouse.netlify.app/.netlify/functions/corporate-gifts', formData);
         console.log(response.data);
         alert('Corporate gift request submitted successfully!');
         // Reset form fields
