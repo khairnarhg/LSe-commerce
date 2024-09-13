@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const CorporateGifts = require('../../models/CorporateGifts');
 const serverless = require('serverless-http');
+require('dotenv').config();
+
 
 const app = express();
 
@@ -13,9 +15,9 @@ app.use(cors({
 }));
 app.use(bodyParser.json());
 
-const url = 'mongodb+srv://hgkhairnar255:Ngu051MeipNLysla@cluster0.541wpl6.mongodb.net/Leather%26Style?retryWrites=true&w=majority&appName=Cluster0';
+// const url = 'mongodb+srv://hgkhairnar255:Ngu051MeipNLysla@cluster0.541wpl6.mongodb.net/Leather%26Style?retryWrites=true&w=majority&appName=Cluster0';
 
-mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGODB_URI)
     .then(async () => {
         console.log('Connected to MongoDB');
 
