@@ -18,11 +18,11 @@ const Navbar = ({ contactUsRef }) => {
 
   const toggleShop = () => {
     setIsMenuOpen(false);
-    setIsShopOpen(!isShopOpen);
+    setIsShopOpen(true);
   };
 
   const toggleSearch = () => {
-    setIsSearchOpen(!isSearchOpen);
+    setIsSearchOpen(true);
   };
 
   const closeSearch = () => {

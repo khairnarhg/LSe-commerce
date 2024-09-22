@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import './AboutUs.css';
 import Navbar from '../../components/Navbar/Navbar';
 import ContactUs from '../../components/ContactUs/ContactUs';
-import img1 from '../../assets/bg/abt1.webp';
+import img1 from '../../assets/bg/abt1.png';
 import img2 from '../../assets/bg/abt2.webp';
 import logo from '../../assets/logos/newlogonobg.png';
 const AboutUs = () => {
@@ -29,8 +29,6 @@ const AboutUs = () => {
           </div>
           <div className="baboutusline4"></div>
         </div>
-
-
       </div>
       <div ref={contactUsRef}>
         <ContactUs />

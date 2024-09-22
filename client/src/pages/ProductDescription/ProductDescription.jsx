@@ -35,30 +35,33 @@ const ProductDescription = () => {
       }
     }); 
   };
+  const fetchProduct = async () => {
+    try {
+      console.log("Category:", category);
+      console.log("Product ID:", id);
+      const response = await fetch('/data1.json');
+      const data = await response.json();
+      console.log("Fetched Data:", data);
+      const productData = data.Category[category][id];
+      if (productData) {
+        setProduct(productData);
+      } else {
+        setError('Product not found');
+      }
+      setLoading(false);
+    } catch (err) {
+      console.error("Fetch Error:", err);
+      setError('Failed to fetch product details');
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
-    const fetchProduct = async () => {
-      try {
-        console.log("Category:", category);
-        console.log("Product ID:", id);
-        const response = await fetch('/data1.json');
-        const data = await response.json();
-        console.log("Fetched Data:", data);
-        const productData = data.Category[category][id];
-        if (productData) {
-          setProduct(productData);
-        } else {
-          setError('Product not found');
-        }
-        setLoading(false);
-      } catch (err) {
-        console.error("Fetch Error:", err);
-        setError('Failed to fetch product details');
-        setLoading(false);
-      }
-    };
 
-    fetchProduct();
+
+    if (id && category) {
+      fetchProduct();
+    }
   }, [id, category]);
 
   if (loading) return <div>Loading...</div>;

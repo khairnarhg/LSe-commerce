@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from '../../../components/Navbar/Navbar.jsx';
 import ContactUs from '../../../components/ContactUs/ContactUs.jsx';
 import WMimg from '../../../assets/Images/womensbagscat.webp';
+import olivaimg from '../../../assets/Images/Oliva.jpg';
 
 const WomensBags = () => {
   const contactUsRef = useRef(null);
@@ -167,7 +168,7 @@ const WomensBags = () => {
                     <div className='prices'>₹ 2436 MRP <span className='cut-price'>₹ 3480</span>/-</div>
               </div>
           </div>
-          <div className='product'onClick={() => handleProductClick('SL140')}>
+          <div className='product'onClick={() => handleProductClick('SL192')}>
               <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722709006/WhatsApp_Image_2024-08-03_at_23.38.00_dauzrh.webp" alt="" className='product-img'/>
               <div className='product-title'>
                     <div className='product-name'>Sling With Chain</div>
@@ -178,11 +179,19 @@ const WomensBags = () => {
         </div>
         <div className="a-div1">
           <div className='product'onClick={() => handleProductClick('SL141')}>
-              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688058/handbag_4_gtfc17.webp" alt="" className='product-img'/>
+              <img src={olivaimg} alt="" className='product-img'/>
               <div className='product-title'>
                     <div className='product-name'>Oliva</div>
                     'Flat 30% OFF'
                     <div className='prices'>₹ 1575 MRP <span className='cut-price'>₹ 2250</span>/-</div>
+              </div>
+          </div>
+          <div className='product'onClick={() => handleProductClick('SL140')}>
+              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688058/handbag_4_gtfc17.webp" alt="" className='product-img'/>
+              <div className='product-title'>
+                    <div className='product-name'>Ladies Sling Stan BSL</div>
+                    'Flat 30% OFF'
+                    <div className='prices'>₹ 1838 MRP <span className='cut-price'>₹ 2625</span>/-</div>
               </div>
           </div>
         </div>

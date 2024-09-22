@@ -5,6 +5,8 @@ const NewArrivals = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const touchStartX = useRef(0);
     const navigate = useNavigate();
+    const [isLaptopScreen, setIsLaptopScreen] = useState(window.innerWidth >= 768);
+    const itemsPerView = isLaptopScreen ? 3 : 1;
 
 
     const products = [ { image: "https://res.cloudinary.com/dyyocxffd/image/upload/v1722688072/purse_3_red_dgxvlm.webp", name: 'Bucket Bag', a_price: '5505', d_price: '3854', id:'SL186', cat:"Women's Bag" }, 
@@ -29,28 +31,42 @@ const NewArrivals = () => {
 
 
 
-    const nextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % products.length);
+        const nextSlide = () => {
+          // Limit the next slide based on how many items can be visible in the current screen size
+          setCurrentIndex((prevIndex) => 
+              Math.min(prevIndex + 1, products.length - itemsPerView)
+          );
       };
     
       const prevSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + products.length) % products.length);
+          // Make sure we don’t scroll to a negative index
+          setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
       };
     
       const handleTouchStart = (e) => {
-        touchStartX.current = e.touches[0].clientX;
+          touchStartX.current = e.touches[0].clientX;
       };
     
       const handleTouchEnd = (e) => {
-        const touchEndX = e.changedTouches[0].clientX;
-        const difference = touchStartX.current - touchEndX;
-    
-        if (difference > 50) {
-          nextSlide();
-        } else if (difference < -50) {
-          prevSlide();
-        }
+          const touchEndX = e.changedTouches[0].clientX;
+          const difference = touchStartX.current - touchEndX;
+          if (difference > 50) {
+              nextSlide();
+          } else if (difference < -50) {
+              prevSlide();
+          }
       };
+    
+      useEffect(() => {
+          const handleResize = () => {
+              setIsLaptopScreen(window.innerWidth >= 768);
+          };
+          window.addEventListener('resize', handleResize);
+    
+          return () => {
+              window.removeEventListener('resize', handleResize);
+          };
+      }, []);
   return (
     <div className='main-area1'>
         <div className='title-group'>
@@ -60,14 +76,18 @@ const NewArrivals = () => {
         </div>
         <div className='blur-bg' >
         <div className='discount'>*<span className='b-disc'>30%</span> off on all products</div>
-        <div className='instr'>Swipe to see the products</div>
-        <button className='carousel-button-prev' onClick={prevSlide}>&#10094;</button>
+        {/* <div className='instr'>Swipe to see the products</div> */}
+        {currentIndex > 0 && (
+                    <button className='carousel-button-prev' onClick={prevSlide}>&#10094;</button>
+                )}
             <div className='carousel-container-2'>
             {/* <button className='carousel-button prev' onClick={prevSlide}>&#10094;</button> */}
             <div className="carousel-wrapper2">
             <div
           className='carousel-slide1'
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          style={{ 
+            transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)`
+        }}
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
         >
@@ -84,7 +104,9 @@ const NewArrivals = () => {
         </div>
         </div>    
         </div>
-        <button className='carousel-button-next' onClick={nextSlide}>&#10095;</button>
+        {currentIndex < products.length - itemsPerView && (
+                    <button className='carousel-button-next' onClick={nextSlide}>&#10095;</button>
+                )}
 
         </div>
       

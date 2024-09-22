@@ -21,7 +21,6 @@
 }
 
 .line11{
-   /* box-shadow: 2px 1.5px 1.5px grey; */
    height: 2.5px;
    width: 200px;
    background-color: white;
@@ -78,7 +77,6 @@
     height:105%;
     border: 0px;
     background-color: transparent;
-    /* box-shadow: 3px 2px 2px grey; */
     overflow: hidden;
     cursor: pointer;
     color: white;
@@ -92,11 +90,94 @@
 
 .product-title1{
     font-family: 'Gowun Batang', serif;
-    font-size: 20px;
+    font-size: 1rem;
     /* font-weight: bold; */
     color: white;
     margin-top: 0;
     letter-spacing: 1px;
+}
+
+.carousel-container-1 {
+  position: relative;
+  margin-top: 5%;
+  width: 70%;
+  height: 90%;
+  overflow: hidden;
+  /* background-color: black; */
+}
+
+.carousel-wrapper1 {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: calc(100% * 5 / 3);
+}
+
+.carousel-item {
+  min-width: 33.33%; /* Show 3 items at once */
+  padding: 0 10px; /* Spacing between items */
+  box-sizing: border-box;
+}
+
+.product-photo {
+  width: 60%;
+  height: 90%;
+  object-fit: contain;
+  /* border-radius: 20px; */
+}
+
+
+.discount {
+  position: absolute;
+  top:1.5%;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: 'Gowun Batang', serif;
+  font-size: 1.1rem;
+}
+
+.instr{
+  position: absolute;
+  top:6.5%;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: 'Gowun Batang', serif;
+}
+
+.cut-price {
+  text-decoration: line-through;
+}
+
+.carousel-button-prev,
+.carousel-button-next {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  transform: translateY(-25px);
+}
+.carousel-button-prev{
+  left:10px;
+}
+.carousel-button-next{
+  right: 10px;
+}
+
+.b-disc{
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 768px){
@@ -167,16 +248,12 @@
     height: 90%;
     overflow: hidden;
     /* background-color: black; */
-
-
   }
   
   .carousel-wrapper1 {
     display: flex;
     justify-content: center;
     align-items:center;
-    
-   
   }
   
   .carousel-slide {
@@ -194,7 +271,7 @@
     width: 50%;
     height: 70%;
     object-fit: contain;
-    border-radius: 20px;
+    margin-top: 5%;
   }
 
   
@@ -246,10 +323,6 @@
     font-weight: bold;
   }
   
-
-
-  
-
 }
 
 @media only screen and (max-width: 870px) and (orientation: landscape){
@@ -266,7 +339,5 @@
         background-position: center ;
         border-radius: 20px;
    }
-
-
 }
 

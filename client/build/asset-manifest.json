@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.d6ca13a3.css",
-    "main.js": "/static/js/main.3aaacd91.js",
+    "main.js": "/static/js/main.717682ae.js",
     "static/js/453.da9179f9.chunk.js": "/static/js/453.da9179f9.chunk.js",
     "static/media/NewArrivalsBg.png": "/static/media/NewArrivalsBg.5ebdf3ba6746bcb2251e.png",
     "static/media/bg1.png": "/static/media/bg1.29aca644bf21bc219458.png",
     "static/media/BestSellersBg.png": "/static/media/BestSellersBg.c760e12c1f14c30a7157.png",
     "static/media/bg22.png": "/static/media/bg22.6247203ece9bd8cc320a.png",
     "static/media/women-aboutUs.webp": "/static/media/women-aboutUs.a5e2288add2961db0c99.webp",
+    "static/media/abt1.png": "/static/media/abt1.6eed58b92b67ffac05bb.png",
     "static/media/gmap.png": "/static/media/gmap.324220475aa2b7c88a4d.png",
     "static/media/men-aboutUs.webp": "/static/media/men-aboutUs.402088facc1984581302.webp",
     "static/media/mensbagscat.webp": "/static/media/mensbagscat.4f33a8eb6770a186fc92.webp",
@@ -16,7 +17,6 @@
     "static/media/bg5.webp": "/static/media/bg5.1c4ee6eefb5a56adc2e2.webp",
     "static/media/bg1.webp": "/static/media/bg1.0d2e2ab3833352800ad3.webp",
     "static/media/accessoriescat.webp": "/static/media/accessoriescat.7ee2b2f8d6d4d5ebd459.webp",
-    "static/media/abt1.webp": "/static/media/abt1.469101824adb2440e5cd.webp",
     "static/media/WomensBags.jpg": "/static/media/WomensBags.19f4cca043f16d14858c.jpg",
     "static/media/TravelBags.jpg": "/static/media/TravelBags.7b23fb5be7b86bc6e0e5.jpg",
     "static/media/abt2.webp": "/static/media/abt2.f5fccd0275deaa514990.webp",
@@ -25,6 +25,7 @@
     "static/media/travelbagscat.webp": "/static/media/travelbagscat.bde8114a6d1cc535a7d8.webp",
     "static/media/bg2.webp": "/static/media/bg2.28abf9b3d7970ab41e10.webp",
     "static/media/mensBags.webp": "/static/media/mensBags.23eabfa853efecd31ac9.webp",
+    "static/media/Oliva.jpg": "/static/media/Oliva.a0edfd30f31defcc9f07.jpg",
     "static/media/bg11.webp": "/static/media/bg11.d855d8fbbb5474aacb6d.webp",
     "static/media/bg4.webp": "/static/media/bg4.a23b9f2f532f8f6c4566.webp",
     "static/media/bg3.webp": "/static/media/bg3.48a199fd4eed74114c91.webp",
@@ -42,11 +43,11 @@
     "static/media/crosswhite.png": "/static/media/crosswhite.0e2873f8df39d755fac1.png",
     "index.html": "/index.html",
     "main.d6ca13a3.css.map": "/static/css/main.d6ca13a3.css.map",
-    "main.3aaacd91.js.map": "/static/js/main.3aaacd91.js.map",
+    "main.717682ae.js.map": "/static/js/main.717682ae.js.map",
     "453.da9179f9.chunk.js.map": "/static/js/453.da9179f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d6ca13a3.css",
-    "static/js/main.3aaacd91.js"
+    "static/js/main.717682ae.js"
   ]
 }
