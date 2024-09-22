@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import './Apparels.css';
@@ -8,6 +8,7 @@ import ContactUs from '../../../components/ContactUs/ContactUs.jsx';
 const Apparels = () => {
   const contactUsRef = useRef(null);
   const navigate = useNavigate();
+  const [isLaptopScreen, setIsLaptopScreen] = useState(window.innerWidth >= 768);
 
   const handleProductClick = (productId) => {
     navigate(`/products/${productId}`, {
@@ -18,12 +19,28 @@ const Apparels = () => {
     <div className='ap-container'>
       <Navbar contactUsRef={contactUsRef}/>
       <div className="ap-main-container">
+      {isLaptopScreen && (
+    <>
+      <div className='image-area'>
+        <img src={APimg} alt="Accessories" />
+      </div>
       <div className="a-header">
         APPARELS
       </div>
-      <div className='image-area'>
-        <img src={APimg} alt="" />
+    </>
+  )}
+  {!isLaptopScreen && (
+    <>
+    <div className="a-header">
+        APPARELS
       </div>
+    
+      <div className='image-area'>
+        <img src={APimg} alt="Accessories" />
+      </div>
+      </>
+  )}
+   
       <div className="tagline">
        "Wear Your Confidence - Luxurious Leather Apparel."
       </div>
@@ -33,7 +50,7 @@ const Apparels = () => {
       <div className="product-area">
         <div className="a-div1">
           <div className='product' onClick={() => handleProductClick('SL233')}>
-            <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688064/Womenjacketfront_nlcgpy.webp" alt="" className='product-img'/>
+            <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688064/Womenjacketfront_nlcgpy.webp" alt="" className='product-img1'/>
             <div className='product-title'>
                   <div className='product-name'>Women's Jacket</div>
                   'Flat 30% OFF'

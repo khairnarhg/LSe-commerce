@@ -46,7 +46,7 @@ function ContactUs() {
         </div> */}
       </div>
       <footer className="contact-footer">
-        <p className='copyright'>Copyright&copy; 2024</p>
+        {/* <p className='copyright'>Copyright&copy; 2024</p> */}
         <p>Leather and Style</p>
       </footer>
     </div>

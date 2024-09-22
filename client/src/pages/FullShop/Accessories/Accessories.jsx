@@ -1,4 +1,4 @@
-import React,{useRef} from 'react';
+import React,{useRef,useState} from 'react';
 import './Accessories.css';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -8,6 +8,8 @@ import ContactUs from '../../../components/ContactUs/ContactUs.jsx';
 
 const Accessories = () => {
   const contactUsRef = useRef(null);
+  const [isLaptopScreen, setIsLaptopScreen] = useState(window.innerWidth >= 768);
+  
 
   const navigate = useNavigate();
   const handleProductClick = (productId) => {
@@ -19,12 +21,29 @@ const Accessories = () => {
     <div className='accessories-container'> 
     <Navbar contactUsRef={contactUsRef}/>
     <div className='acccessories-main-container'>
+    {isLaptopScreen && (
+    <>
+      <div className='image-area'>
+        <img src={Accessoriescat} alt="Accessories" className='image-area-img'/>
+      </div>
       <div className="a-header">
         ACCESSORIES
       </div>
-      <div className='image-area'>
-        <img src={Accessoriescat} alt="" />
+    </>
+  )}
+  {!isLaptopScreen && (
+    <>
+    <div className="a-header">
+        ACCESSORIES
       </div>
+    
+      <div className='image-area'>
+        <img src={Accessoriescat} alt="Accessories" />
+      </div>
+      </>
+  )}
+     
+      
       <div className="tagline">
         "Elevate Every Detail with Luxurious Leather Accessories."
       </div>

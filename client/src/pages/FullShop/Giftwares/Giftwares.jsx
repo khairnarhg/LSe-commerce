@@ -1,4 +1,4 @@
-import React,{useRef} from 'react';
+import React,{useRef, useState} from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import './Giftwares.css';
@@ -9,6 +9,7 @@ import ContactUs from '../../../components/ContactUs/ContactUs.jsx';
 const Giftwares = () => {
   const contactUsRef = useRef(null);
   const navigate = useNavigate(); // Initialize useNavigate
+  const [isLaptopScreen, setIsLaptopScreen] = useState(window.innerWidth >= 768);
 
   const handleProductClick = (productId) => {
     navigate(`/products/${productId}`, {
@@ -19,12 +20,27 @@ const Giftwares = () => {
     <div className='gf-container'>
       <Navbar contactUsRef={contactUsRef}/>
       <div className="gf-main-container">
-      <div className="a-header">
-       GIFTWARES
-      </div>
+      {isLaptopScreen && (
+    <>
       <div className='image-area'>
-        <img src={GFimg} alt="" />
+        <img src={GFimg} alt="Accessories" />
       </div>
+      <div className="a-header">
+      GIFTWARES
+      </div>
+    </>
+  )}
+  {!isLaptopScreen && (
+    <>
+    <div className="a-header">
+  GIFTWARES
+      </div>
+    
+      <div className='image-area'>
+        <img src={GFimg} alt="Accessories" />
+      </div>
+      </>
+  )}
       <div className="tagline">
       "Give the Gift of Luxury - Thoughtful Leather Treasures."
       </div>

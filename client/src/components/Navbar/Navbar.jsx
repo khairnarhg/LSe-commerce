@@ -51,9 +51,11 @@ const Navbar = ({ contactUsRef }) => {
   }, [isMenuOpen]);
 
   const navigateTo = (path) => {
+    
     if (path === 'contact') {
       scrollToContactUs();
     } else {
+      window.scrollTo({ top: 0});
       navigate(path);
     }
     setIsMenuOpen(false); // Close the menu after navigating
@@ -92,12 +94,12 @@ const Navbar = ({ contactUsRef }) => {
           <span className="site-title">Leather and Style</span>
         </div>
         <div className="icons-group">
-          <button onClick={()=> navigateTo('/login')}>
+          {/* <button onClick={()=> navigateTo('/login')}>
             <img src={profile} alt="Profile" className="icon" />
           </button>
           <button onClick={toggleSearch}>
             <img src={search} alt="Search" className="icon" />
-          </button>
+          </button> */}
         </div>
       </div>
       <div className="lowerHalf">

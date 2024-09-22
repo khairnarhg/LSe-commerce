@@ -1,4 +1,4 @@
-import React,{useRef} from 'react';
+import React,{useRef, useState} from 'react';
 import { Link } from 'react-router-dom';
 import './MensBags.css';
 import Navbar from '../../../components/Navbar/Navbar.jsx';
@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom';
 const MensBags = () => {
   const contactUsRef = useRef(null);
   const navigate = useNavigate();
+  const [isLaptopScreen, setIsLaptopScreen] = useState(window.innerWidth >= 768);
   const handleProductClick = (productId) => {
     navigate(`/products/${productId}`, {
       state: { category: "Men's Bag" }
@@ -18,12 +19,28 @@ const MensBags = () => {
     <div className='mb-container'>
       <Navbar contactUsRef={contactUsRef}/>
       <div className="mb-main-container">
-      <div className="a-header">
-        MEN'S BAGS
-      </div>
+      {isLaptopScreen && (
+    <>
       <div className='image-area'>
-        <img src={MBimg} alt="" />
+        <img src={MBimg} alt="Accessories" />
       </div>
+      <div className="a-header">
+        Men's Bags
+      </div>
+    </>
+  )}
+  {!isLaptopScreen && (
+    <>
+    <div className="a-header">
+     Men's Bags
+      </div>
+    
+      <div className='image-area'>
+        <img src={MBimg} alt="Accessories" />
+      </div>
+      </>
+  )}
+   
       <div className="tagline">
       "Style Meets Functionality - Discover Your Perfect Companion."
 

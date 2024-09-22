@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const Shop = ({ isOpen, onClose }) => {
   const navigate= useNavigate();
     const navigateTo=(path)=>{
+      window.scrollTo({ top: 0});
         navigate(path);
     }
   useEffect(() => {

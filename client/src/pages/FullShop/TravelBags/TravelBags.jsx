@@ -1,4 +1,4 @@
-import React,{useRef} from 'react';
+import React,{useRef,useState} from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate for programmatic navigation
 import './TravelBags.css';
 import Navbar from '../../../components/Navbar/Navbar.jsx';
@@ -8,6 +8,7 @@ import TBimg from '../../../assets/Images/travelbagscat.webp';
 const TravelBags = () => {
   const contactUsRef = useRef(null);
   const navigate = useNavigate(); // Initialize useNavigate
+  const [isLaptopScreen, setIsLaptopScreen] = useState(window.innerWidth >= 768);
 
   const handleProductClick = (productId) => {
     navigate(`/products/${productId}`, {
@@ -19,12 +20,27 @@ const TravelBags = () => {
     <div className='tb-container'>
       <Navbar contactUsRef={contactUsRef}/>
       <div className="tb-main-container">
-        <div className="a-header">
-          TRAVEL BAGS
-        </div>
-        <div className='image-area'>
-          <img src={TBimg} alt="" />
-        </div>
+      {isLaptopScreen && (
+    <>
+      <div className='image-area'>
+        <img src={TBimg} alt="Accessories" />
+      </div>
+      <div className="a-header">
+      Travel Bags
+      </div>
+    </>
+  )}
+  {!isLaptopScreen && (
+    <>
+    <div className="a-header">
+    Travel Bags
+      </div>
+    
+      <div className='image-area'>
+        <img src={TBimg} alt="Accessories" />
+      </div>
+      </>
+  )}
         <div className="tagline">
           "Travel in Style - Your Journey Deserves the Best."
         </div>

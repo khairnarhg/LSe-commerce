@@ -1,86 +1,56 @@
-.Reviews-Home-container{
-    margin-top: 30px;
-    height: 380px;
+.Reviews-Home-container {
     width: 100%;
-    position:relative;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Gowun Batang', serif;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
 
-}
+  .heading{
+    margin-top: 2rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
 
-.heading{
-    font-size: 2vw;
-    font-family: 'Gowun Batang', serif;
-}
-
-.reviews-space{
-    padding: 3%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.reviews-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid rgb(0,0,0,0.7); */
-    border-radius: 7px;
-    padding: 2vw;
-}
-
-.product-details{
-    margin-right: 1vw;
+  .reviews-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
+    gap: 7vh;
+  }
+  
+  .rp-3,
+  .rp-2,
+  .rp-1{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 5vw;
+
+  }
+
+
+  .review-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 50%;
+  }
+
+  .person-name{
+    font-size: 1.5rem;
     font-weight: bold;
-    
-
-}
-
-.product-image{
-    width: 7vw;
-    height: 20vh;
-}
-
-.product-image img{
-    height: 100%;
     width: 100%;
-}
+  }
 
-
-
-
-
-.review-detail{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
+  .review{
+    font-size: 1rem;
+    width: 80%;  
+    font-family:'Gowun Batang', serif;      
     
-    /* font-weight: bold; */
-}
-
-.person-name{
-    position: relative;
-    font-size: 1.5vw;
-    transform: translateY(-50%);
-    font-weight: bold;
-
-}
-
-.review{
-    position: relative;
-    height: 15vh;
-    width:  9vw;
-    /* background-color: red; */
-
-}
+  }
 
 @media only screen and (max-width: 768px){
     .Reviews-Home-container {

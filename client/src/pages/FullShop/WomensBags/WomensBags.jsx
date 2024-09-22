@@ -1,4 +1,4 @@
-import React,{useRef} from 'react';
+import React,{useRef,useState} from 'react';
 import './WomensBags.css';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
@@ -10,6 +10,7 @@ import olivaimg from '../../../assets/Images/Oliva.jpg';
 const WomensBags = () => {
   const contactUsRef = useRef(null);
   const navigate = useNavigate(); // Initialize useNavigate
+  const [isLaptopScreen, setIsLaptopScreen] = useState(window.innerWidth >= 768);
 
   const handleProductClick = (productId) => {
     navigate(`/products/${productId}`, {
@@ -20,12 +21,27 @@ const WomensBags = () => {
     <div className='wm-container'>
       <Navbar contactUsRef={contactUsRef}/>
       <div className="wm-main-container">
-      <div className="a-header">
-        WOMEN'S BAGS
-      </div>
+      {isLaptopScreen && (
+    <>
       <div className='image-area'>
-        <img src={WMimg} alt="" />
+        <img src={WMimg} alt="Accessories" />
       </div>
+      <div className="a-header">
+        Women's Bags
+      </div>
+    </>
+  )}
+  {!isLaptopScreen && (
+    <>
+    <div className="a-header">
+    Women's Bags
+      </div>
+    
+      <div className='image-area'>
+        <img src={WMimg} alt="Accessories" />
+      </div>
+      </>
+  )}
       <div className="tagline">
       "Timeless Elegance, Crafted for the Modern Woman."
       </div>
@@ -35,7 +51,7 @@ const WomensBags = () => {
       <div className="product-area">
         <div className="a-div1">
           <div className='product' onClick={() => handleProductClick('SL108')}>
-            <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688072/purse_blue_1_pzqbdc.webp" alt="" className='product-img'/>
+            <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688072/purse_blue_1_pzqbdc.webp" alt="" className='product-img2'/>
             <div className='product-title'>
                   <div className='product-name'>Handle Bag</div>
                   'Flat 30% OFF'
@@ -43,7 +59,7 @@ const WomensBags = () => {
             </div>
           </div>
           <div className='product' onClick={() => handleProductClick('SL186')}>
-            <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688072/purse_3_red_dgxvlm.webp" alt="" className='product-img'/>
+            <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688072/purse_3_red_dgxvlm.webp" alt="" className='product-img2'/>
             <div className='product-title'>
                   <div className='product-name'>Bucket Bag</div>
                   'Flat 30% OFF'
@@ -53,7 +69,7 @@ const WomensBags = () => {
         </div>
         <div className="a-div1">
         <div className='product' onClick={() => handleProductClick('SL164')}>
-            <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688071/purse_blue3_akhujd.webp" alt="" className='product-img'/>
+            <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688071/purse_blue3_akhujd.webp" alt="" className='product-img2'/>
             <div className='product-title'>
                   <div className='product-name'>Eco Shiny Tote</div>
                   'Flat 30% OFF'
@@ -61,7 +77,7 @@ const WomensBags = () => {
             </div>
           </div>
           <div className='product' onClick={() => handleProductClick('SL177')}> 
-            <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688071/womenpurse4_p7sba8.webp" alt="" className='product-img'/>
+            <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688071/womenpurse4_p7sba8.webp" alt="" className='product-img2'/>
             <div className='product-title'>
                   <div className='product-name'>Big Armani Bag</div>
                   'Flat 30% OFF'
@@ -71,7 +87,7 @@ const WomensBags = () => {
         </div>
         <div className="a-div1">
           <div className='product' onClick={() => handleProductClick('SL147')}>
-              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688055/purse_uwzh3s.webp" alt="" className='product-img'/>
+              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688055/purse_uwzh3s.webp" alt="" className='product-img2'/>
               <div className='product-title'>
                     <div className='product-name'>Women's Clutch</div>
                     'Flat 30% OFF'
@@ -79,7 +95,7 @@ const WomensBags = () => {
               </div>
           </div>
           <div className='product'onClick={() => handleProductClick('SL101')}>
-              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688059/sidebag_browm_8_fcjirx.webp" alt="" className='product-img'/>
+              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688059/sidebag_browm_8_fcjirx.webp" alt="" className='product-img2'/>
               <div className='product-title'>
                     <div className='product-name'>Side Bag</div>
                     'Flat 30% OFF'
@@ -89,7 +105,7 @@ const WomensBags = () => {
         </div>
         <div className="a-div1">
           <div className='product'onClick={() => handleProductClick('SL162')}>
-              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688055/sideblue_4_ivt8cg.webp" alt="" className='product-img'/>
+              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688055/sideblue_4_ivt8cg.webp" alt="" className='product-img2'/>
               <div className='product-title'>
                     <div className='product-name'>Cross Body Sling</div>
                     'Flat 30% OFF'
@@ -97,7 +113,7 @@ const WomensBags = () => {
               </div>
           </div>
           <div className='product'onClick={() => handleProductClick('SL105')}>
-              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1723200957/IMG_5939_dok3yn.webp" alt="" className='product-img'/>
+              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1723200957/IMG_5939_dok3yn.webp" alt="" className='product-img2'/>
               <div className='product-title'>
                     <div className='product-name'>Triangle Sling Bag</div>
                     'Flat 30% OFF'
@@ -107,7 +123,7 @@ const WomensBags = () => {
         </div>
         <div className="a-div1">
           <div className='product'onClick={() => handleProductClick('SL163')}>
-              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688054/SL105_atas6i.webp" alt="" className='product-img'/>
+              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688054/SL105_atas6i.webp" alt="" className='product-img2'/>
               <div className='product-title'>
                     <div className='product-name'>Square Ladies Laptop Bag</div>
                     'Flat 30% OFF'
@@ -115,7 +131,7 @@ const WomensBags = () => {
               </div>
           </div>
           <div className='product'onClick={() => handleProductClick('SL184')}>
-              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688054/SL177_3_p5h8ev.webp" alt="" className='product-img'/>
+              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688054/SL177_3_p5h8ev.webp" alt="" className='product-img2'/>
               <div className='product-title'>
                     <div className='product-name'>Versatile Women's Bag</div>
                     'Flat 30% OFF'
@@ -125,7 +141,7 @@ const WomensBags = () => {
         </div>
         <div className="a-div1">
           <div className='product'onClick={() => handleProductClick('SL102')}>
-              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722709037/WhatsApp_Image_2024-08-03_at_23.38.00_1_cxnxzj.webp" alt="" className='product-img'/>
+              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722709037/WhatsApp_Image_2024-08-03_at_23.38.00_1_cxnxzj.webp" alt="" className='product-img2'/>
               <div className='product-title'>
                     <div className='product-name'>Baddel Habdel</div>
                     'Flat 30% OFF'
@@ -133,7 +149,7 @@ const WomensBags = () => {
               </div>
           </div>
           <div className='product'onClick={() => handleProductClick('SL103')}>
-              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722709021/WhatsApp_Image_2024-08-03_at_23.37.55_1_sqdhyf.webp" alt="" className='product-img'/>
+              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722709021/WhatsApp_Image_2024-08-03_at_23.37.55_1_sqdhyf.webp" alt="" className='product-img2'/>
               <div className='product-title'>
                     <div className='product-name'>Small Armani Bag</div>
                     'Flat 30% OFF'
@@ -143,7 +159,7 @@ const WomensBags = () => {
         </div>
         <div className="a-div1">
           <div className='product'onClick={() => handleProductClick('SL128')}>
-              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722709048/WhatsApp_Image_2024-08-03_at_23.37.54_okfzbg.webp" alt="" className='product-img'/>
+              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722709048/WhatsApp_Image_2024-08-03_at_23.37.54_okfzbg.webp" alt="" className='product-img2'/>
               <div className='product-title'>
                     <div className='product-name'>Round Japan Handbag</div>
                     'Flat 30% OFF'
@@ -151,7 +167,7 @@ const WomensBags = () => {
               </div>
           </div>
           <div className='product'onClick={() => handleProductClick('SL148')}>
-              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722709029/WhatsApp_Image_2024-08-03_at_23.37.58_cgjeas.webp" alt="" className='product-img'/>
+              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722709029/WhatsApp_Image_2024-08-03_at_23.37.58_cgjeas.webp" alt="" className='product-img2'/>
               <div className='product-title'>
                     <div className='product-name'>Hermen's Bag</div>
                     'Flat 30% OFF'
@@ -161,7 +177,7 @@ const WomensBags = () => {
         </div>
         <div className="a-div1">
           <div className='product'onClick={() => handleProductClick('SL165')}>
-              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722709042/WhatsApp_Image_2024-08-03_at_23.38.03_srgdet.webp" alt="" className='product-img'/>
+              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722709042/WhatsApp_Image_2024-08-03_at_23.38.03_srgdet.webp" alt="" className='product-img2'/>
               <div className='product-title'>
                     <div className='product-name'>Yoshi 2</div>
                     'Flat 30% OFF'
@@ -169,7 +185,7 @@ const WomensBags = () => {
               </div>
           </div>
           <div className='product'onClick={() => handleProductClick('SL192')}>
-              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722709006/WhatsApp_Image_2024-08-03_at_23.38.00_dauzrh.webp" alt="" className='product-img'/>
+              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722709006/WhatsApp_Image_2024-08-03_at_23.38.00_dauzrh.webp" alt="" className='product-img2'/>
               <div className='product-title'>
                     <div className='product-name'>Sling With Chain</div>
                     'Flat 30% OFF'
@@ -187,7 +203,7 @@ const WomensBags = () => {
               </div>
           </div>
           <div className='product'onClick={() => handleProductClick('SL140')}>
-              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688058/handbag_4_gtfc17.webp" alt="" className='product-img'/>
+              <img src="https://res.cloudinary.com/dyyocxffd/image/upload/v1722688058/handbag_4_gtfc17.webp" alt="" className='product-img2'/>
               <div className='product-title'>
                     <div className='product-name'>Ladies Sling Stan BSL</div>
                     'Flat 30% OFF'

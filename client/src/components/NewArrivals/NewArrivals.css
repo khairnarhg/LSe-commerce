@@ -141,7 +141,7 @@ text-decoration: line-through;
  }
  .product-photo1 {
    width: 60%;
-   height: 90%;
+   height: 75%;
    object-fit: contain;
    /* border-radius: 20px; */
  }
